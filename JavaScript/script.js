@@ -1,1 +1,0 @@
-let texto = document.getElementById('paragrafo').style.color="red";
