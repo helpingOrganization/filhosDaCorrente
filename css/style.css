@@ -23,7 +23,6 @@
 
 #header-img {
     margin-left: 2%;
-    opacity: 80%;
 }
 
 #header-img img {
@@ -62,11 +61,13 @@ body {
     height: 992px;
 }
 
+/*Posiciona o título da associação*/
+
 #association-name-first {
     width: fit-content;
     color: white;
     font-family: sans-serif;
-    margin: 15% 0% 0% 10%;
+    margin: 22% 0% 0% 10%;
     background-color: rgba(255, 204, 35, 0.913);
     border-radius: 12px;
     font-size: 25px;
