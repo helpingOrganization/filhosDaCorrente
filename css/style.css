@@ -1,10 +1,15 @@
 /*Padronização da página*/
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: Sans-serif;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 /*Barra de navegação*/
@@ -13,58 +18,83 @@
     position: fixed;
     top: 0;
     width: 100vw;
-    height: 95px;
     background-color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+}
+
+/*Dá o espaço do tamanho da nav*/
+
+.container-space-nav-corretion {
+    width: 100%;
+    height: 90px;
 }
 
 /*Logo barra de navegação*/
 
 
 #logo-header {
-    height: 140px;
-    width: 210px;
+    margin: 0% 4%;
+    height: 90px;
+    width: 230px;
 }
 
-/*Posicionamento da nav e estilização de links*/
+/*Menu para responsividade*/
+
+.mobile-menu {
+    margin: 0% 4%;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    margin: 8px;
+}
+
+/*Posicionamento da nav*/
 
 #header-nav {
     margin-left: 10%;
     width: 57%;
 }
 
-#header-nav a {    
-    color: rgb(255, 255, 255);    
-    text-decoration: none;
+#header-nav a:hover {
+    color: rgb(255, 204, 35);
+    transition: 0.3s;
 }
 
-#header-nav nav ul {                
+#header-nav nav ul {
     list-style: none;
     display: flex;
 }
 
 #header-nav li {
-    padding: 16px;
+    padding: 10px;
     font-size: 18px;
+    letter-spacing: 2px;
     white-space: nowrap;
     margin: 0% 2.5%;
 }
 
+/*background de imagem*/
+
 body {
-    margin: 0px;
     background-image: url('/imagens/associacaoMembros.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 992px;
 }
 
-/*Dá o espaço do tamanho da nav*/
+/*corração do background com div fixada*/
 
-#container-space {
+#backgroud-img-corretion {
     width: 100%;
-    height: 130px;
+    height: 903px;
+    border: 0.1px solid black;
 }
 
 /*Posiciona o título da associação*/
@@ -73,15 +103,14 @@ body {
     width: fit-content;
     color: white;
     font-family: sans-serif;
-    margin: 15% 0% 0% 11%;
+    margin: 17.5% 0% 0% 11%;
     background-color: rgba(255, 204, 35, 0.969);
     border-radius: 12px;
     font-size: 30px;
     padding: 15px;
 }
 
-@media (max-width: 400px)
-{
+@media (max-width: 400px) {
     #association-name-first {
         width: fit-content;
         color: white;
@@ -105,8 +134,7 @@ body {
     padding: 15px;
 }
 
-@media (max-width: 400px)
-{
+@media (max-width: 400px) {
     #association-name-second {
         width: fit-content;
         color: white;
@@ -119,3 +147,17 @@ body {
     }
 }
 
+.background-and-content {
+    width: 100%;
+    height: 800px;
+    background-color: rgb(255, 204, 35);
+}
+
+.background-and-content h3 {
+    color: white;
+    font-size: 60px;
+    background-color: black;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 50px;
+}
