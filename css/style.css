@@ -12,13 +12,23 @@ a {
     text-decoration: none;
 }
 
+/*Imagem principal*/
+
+#background-main-img {
+    background-image: url('/imagens/associacaoMembros.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 992px;
+}
+
 /*Barra de navegação*/
 
 #container-header {
     position: fixed;
     top: 0;
     width: 100vw;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.797);
     display: flex;
     align-items: center;
     justify-content: left;
@@ -79,27 +89,9 @@ a {
     margin: 0% 2.5%;
 }
 
-/*background de imagem*/
-
-body {
-    background-image: url('/imagens/associacaoMembros.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 992px;
-}
-
-/*corração do background com div fixada*/
-
-#backgroud-img-corretion {
-    width: 100%;
-    height: 903px;
-    border: 0.1px solid black;
-}
-
 /*Posiciona o título da associação*/
 
-#association-name-first {
+#association-first-name {
     width: fit-content;
     color: white;
     font-family: sans-serif;
@@ -110,8 +102,19 @@ body {
     padding: 15px;
 }
 
+#association-second-name {
+    width: fit-content; 
+    color: white;
+    font-family: sans-serif;
+    margin: 1.8% 0% 0% 15%;
+    background-color: rgba(255, 204, 35, 0.967);
+    border-radius: 12px;
+    font-size: 50px;
+    padding: 15px;
+}
+
 @media (max-width: 400px) {
-    #association-name-first {
+    #association-first-name {
         width: fit-content;
         color: white;
         font-family: sans-serif;
@@ -121,21 +124,8 @@ body {
         font-size: 10px;
         padding: 8px;
     }
-}
 
-#association-name-second {
-    width: fit-content;
-    color: white;
-    font-family: sans-serif;
-    margin: 2% 0% 0% 15%;
-    background-color: rgba(255, 204, 35, 0.967);
-    border-radius: 12px;
-    font-size: 50px;
-    padding: 15px;
-}
-
-@media (max-width: 400px) {
-    #association-name-second {
+    #association-second-name {
         width: fit-content;
         color: white;
         font-family: sans-serif;
@@ -148,12 +138,15 @@ body {
 }
 
 .background-and-content {
+    position:absolute;
     width: 100%;
     height: 800px;
-    background-color: rgb(255, 204, 35);
+    background-image: linear-gradient(to bottom,
+    yellow, orange);
 }
 
 .background-and-content h3 {
+    margin-top: 10px;
     color: white;
     font-size: 60px;
     background-color: black;
