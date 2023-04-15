@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family: Sans-serif;
     scroll-behavior: smooth;
-    overflow: auto;
 }
 
 a {
@@ -31,10 +30,9 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.884);
+    background-color: rgba(0, 0, 0, 0.783);
     display: flex;
     align-items: center;
-    justify-content: left;
 }
 
 /*Dá o espaço do tamanho da nav*/
@@ -120,7 +118,6 @@ a {
     box-shadow: 7px 12px 5px 0px rgba(0, 0, 0, 0.706);
     font-size: 50px;
     padding: 15px;
-    overflow:-moz-hidden-unscrollable;
 }
 
 /*Conteúdo e background*/
