@@ -209,3 +209,8 @@ a {
     align-items: center;
     margin-bottom: 25%;
 }
+.background-and-content-yellow p {
+        font-size: 18px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: black;
+    }
