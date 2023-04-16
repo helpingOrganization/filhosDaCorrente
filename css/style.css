@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family: Sans-serif;
     scroll-behavior: smooth;
-    overflow: auto;
 }
 
 a {
@@ -129,33 +128,31 @@ a {
     background-image: linear-gradient(to bottom,
     yellow, orange);
     display: flex;
-    align-items:center ;
+    align-items:center;
+    line-height: 1.6;
 }
 
 .background-and-content-yellow h2 {
     color: black;
     font-size: 30px;
-    margin: 7%;       
+    font-family: Sans-serif, Arial;
 }   
 
 .background-and-content-yellow p {
+    color: black;
     font-size: 20px;
     font-family: Sans-serif, Arial;
-    color: black;
-    margin: 7%;
     font-weight: 400;
 }
 
 #about-us-image {
     height: fit-content;
     width: fit-content;
+    margin-right: 6%;
 }
 
-#about-us-image {
-    height: 500px;
-    width: 700px;
-    margin-right: 6%;
-
+#about-us-text {
+    margin: 4%;
 }
 
 .support-container {
