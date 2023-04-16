@@ -130,6 +130,8 @@ a {
     height: 650px;
     background-image: linear-gradient(to bottom,
     yellow, orange);
+    display: flex;
+    align-items:center ;
 }
 
 .support-container {
@@ -213,17 +215,30 @@ a {
 /*texto referente sobre nos*/
 
 .background-and-content-yellow p {
-        font-size: 1.125rem;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        font-family: Sans-serif, Arial;
         color: black;
         margin: 7%;
+        font-weight: 400;
     }
 
     /*titulo sobre nos*/
 
 .background-and-content-yellow h2 {
     color: black;
-    font-size: 2.5rem;
+    font-size: 30px;
     margin: 7%;       
 
 }   
+
+#about-us-image {
+    height: fit-content;
+    width: fit-content;
+}
+
+#about-us-image {
+    height: 500px;
+    width: 700px;
+    margin-right: 6%;
+
+}
