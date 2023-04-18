@@ -146,8 +146,7 @@ a {
 }
 
 #about-us-image {
-    max-height: 400px;
-    max-width: 600px;
+    width: 600px;
     margin-right: 6%;
     height: fit-content;
     width: fit-content;
