@@ -11,6 +11,7 @@
 a {
     color: rgb(255, 255, 255);
     text-decoration: none;
+    cursor: pointer;
 }
 
 /*Imagem principal*/
@@ -30,10 +31,9 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.884);
+    background-color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
-    justify-content: left;
 }
 
 /*Dá o espaço do tamanho da nav*/
@@ -56,7 +56,6 @@ a {
 
 .mobile-menu {
     margin: 0% 4%;
-    cursor: pointer;
 }
 
 .mobile-menu div {
@@ -74,7 +73,7 @@ a {
 }
 
 #header-nav a:hover {
-    color: rgb(255, 204, 35);
+    color: rgb(59, 47, 8);
     transition: 0.2s;
 }
 
@@ -102,7 +101,6 @@ a {
 #association-first-name {
     width: fit-content;
     color: white;
-    font-family: sans-serif;
     margin: 17.5% 0% 0% 8%;
     background-color: rgb(252, 211, 30);
     border-radius: 12px;
@@ -112,9 +110,8 @@ a {
 }
 
 #association-second-name {
-    width: fit-content; 
+    width: fit-content;
     color: white;
-    font-family: sans-serif;
     margin: 1.8% 0% 0% 16%;
     background-color: rgb(252, 211, 30);
     border-radius: 12px;
@@ -125,28 +122,51 @@ a {
 
 /*Conteúdo e background*/
 
-.background-and-content-yellow {
+.background-and-content-cyan {
     width: 100%;
     height: 650px;
     background-image: linear-gradient(to bottom,
-    yellow, orange);
+    rgb(62, 148, 138),rgb(30,85,92));
     display: flex;
-    align-items:center ;
+    align-items:center;
+    line-height: 1.6;
+}
+
+.background-and-content-cyan h2 {
+    color: black;
+    font-size: 30px;
+    font-family: Sans-serif, Arial;
+}   
+
+.background-and-content-cyan p {
+    color: black;
+    font-size: 20px;
+    font-family: Sans-serif, Arial;
+    font-weight: 400;
+}
+
+#about-us-image {
+    height: 558px;
+    width: 700px;
+    margin-right: 6%;
+}
+
+#about-us-text {
+    margin: 4%;
 }
 
 .support-container {
     width: 100%;
     height: 150px;
-    background-color: rgb(0, 55, 89);
+    background-color: rgb(116, 121, 117);
 }
 
-.background-and-content-blue {
+.background-and-content-gray {
     width: 100%;
     height: 800px;
     background-image: linear-gradient(to bottom,
-    rgb(91, 91, 244), rgb(24, 0, 122));
+    rgb(116, 121, 117), rgb(54, 53, 55));
 }
-
 
 @media (max-width: 400px) {
     #association-first-name {
@@ -172,73 +192,64 @@ a {
     }
 }
 
+/*Rodapé*/
+
+/*Barra de medias*/
+#background-line-fale-conosco {
+    width: 100%;
+    height: fit-content;
+    padding: 0.4%;
+    background-color: rgb(238, 194, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#background-line-fale-conosco a{
+    margin: 0% 2%;
+}
+
+.social-media-icons {
+    width: 35px;
+    height: 35px;
+}
+
+/*Informações para contato*/
 #container-footer {
     width: 100%;
-    height: 800px;
-    background-color: rgb(252, 211, 30);
-}
-
-#contato-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#contato-footer h2 {
-    color: white;
-    font-size: 4rem;
-    font-weight: bold;
-}
-
-#contato-footer h2 + div {
-    width: 270px;
-    border-top: solid 0.6rem #ffffff;
-    border-radius: 10px;
-}
-
-#contacts-footer {
-    width: 20%;
     height: 300px;
-    color: #ffffff;
-    font-size: 1.2rem;
-    margin: 5% 0% 0% 15%;
-    background-color: rgb(0, 0, 0);
-}
-
-#contacts-footer div {
+    background-image: linear-gradient(to bottom,
+    rgb(239, 196, 24), rgb(215,106,3));
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    margin-bottom: 25%;
 }
 
-/*texto referente sobre nos*/
-
-.background-and-content-yellow p {
-        font-size: 20px;
-        font-family: Sans-serif, Arial;
-        color: black;
-        margin: 7%;
-        font-weight: 400;
-    }
-
-    /*titulo sobre nos*/
-
-.background-and-content-yellow h2 {
-    color: black;
-    font-size: 30px;
-    margin: 7%;       
-
-}   
-
-#about-us-text {
-    height: fit-content;
-    width: fit-content;
+#container-footer h3 {
+    margin-bottom: 3%;
 }
 
-#about-us-image {
-    height: 500px;
-    width: 700px;
-    margin-right: 6%;
-
+#container-footer p {
+    font-weight: 600;
 }
+
+#corretion-spacement-tel-footer {
+    margin: 5% 0%;
+}
+
+.img-and-title-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.icons-footer-resize {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.4rem;
+}
+
+#corretion-spacement-adress-footer {
+    line-height: 1.3;
+}
+
