@@ -17,7 +17,7 @@ a {
 /*Imagem principal*/
 
 #background-main-img {
-    background-image: url('/imagens/associacaoMembros.jpg');
+    background-image: url('../imagens/associacaoMembros.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -73,7 +73,7 @@ a {
 }
 
 #header-nav a:hover {
-    color: rgb(59, 47, 8);
+    color: rgb(246, 199, 47);
     transition: 0.2s;
 }
 
@@ -155,18 +155,79 @@ a {
     margin: 4%;
 }
 
-.support-container {
-    width: 100%;
-    height: 150px;
-    background-color: rgb(0, 55, 89);
+#about-us-image {
+    height: fit-content;
+    width: fit-content;
+    margin-right: 6%;
 }
 
-.background-and-content-blue {
+#about-us-text {
+    margin: 4%;
+}
+    /*projetos*/
+.support-container {
     width: 100%;
-    height: 800px;
+    padding: 100px 0;
+    background-image:linear-gradient(to bottom,
+    rgb(44, 159, 226), rgb(51, 108, 231));
+    display: block;
+    line-height: 1.6;
+}
+
+.support-container h2 {
+    color: black;
+    font-size: 30px;
+    font-family: Sans-serif, Arial;
+    text-align: center;
+}   
+
+.support-container h3 {
+    color: black;
+    font-size: 24px;
+    font-family: Sans-serif, Arial;
+
+}   
+
+.support-container p {
+    color: black;
+    font-size: 20px;
+    font-family: Sans-serif, Arial;
+
+}
+
+
+#background-blue {
+    width: 100%;
+    height: 80px;
     background-image: linear-gradient(to bottom,
             rgb(91, 91, 244), rgb(24, 0, 122));
 }
+
+.sub-titulo{
+    padding: 40px 50px 0;
+}
+
+.lista-projetos{
+    margin: 40px 0;
+}
+.linha-projetos{
+    display: flex;
+    justify-content: center;
+    margin: 20px 50px;
+}
+
+.item-projeto{
+    display: inline;
+    width: 300px;
+    padding: 20px;
+    margin: 0 50px;
+    background-color:#fff;
+    border-radius: 10px;
+}
+.item-projeto img{
+    width: 250px;
+}
+/*fim projetos*/
 
 @media (max-width: 400px) {
     #association-first-name {
@@ -247,6 +308,11 @@ a {
     width: 20px;
     height: 20px;
     margin-right: 0.4rem;
+}
+
+#logo-paz-pierre-resize {
+    height: 105px;
+    width: 215px;
 }
 
 #corretion-spacement-adress-footer {
