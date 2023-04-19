@@ -1,0 +1,25 @@
+/*Padronização da página*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*background da pag*/
+
+#background-main-img {
+    background-image: url('/imagens/conteudo/capoeiraEvent.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1365px;
+}
