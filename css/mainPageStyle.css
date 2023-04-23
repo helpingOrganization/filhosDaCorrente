@@ -128,7 +128,6 @@ a {
     background-image: linear-gradient(to bottom,
     yellow, orange);
     display: flex;
-    align-items:center;
     line-height: 1.6;
 }
 
@@ -136,6 +135,7 @@ a {
     color: black;
     font-size: 30px;
     font-family: Sans-serif, Arial;
+    margin-bottom: 10%;
 }   
 
 .background-and-content-yellow p {
@@ -145,25 +145,17 @@ a {
     font-weight: 400;
 }
 
-#about-us-image {
-    height: fit-content;
-    width: fit-content;
-    margin-right: 6%;
-}
-
 #about-us-text {
-    margin: 4%;
+    margin: 2% 3% 0% 2%;
 }
 
 #about-us-image {
     height: fit-content;
     width: fit-content;
     margin-right: 6%;
+    align-self: center;
 }
 
-#about-us-text {
-    margin: 4%;
-}
     /*projetos*/
 .support-container {
     width: 100%;
