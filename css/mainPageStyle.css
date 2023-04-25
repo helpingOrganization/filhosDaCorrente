@@ -17,7 +17,7 @@ a {
 /*Imagem principal*/
 
 #background-main-img {
-    background-image: url('../imagens/associacaoMembros.jpg');
+    background-image: url('../imagens/conteudo/associacaoMembros.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -73,7 +73,7 @@ a {
 }
 
 #header-nav a:hover {
-    color: rgb(59, 47, 8);
+    color: rgb(246, 199, 47);
     transition: 0.2s;
 }
 
@@ -128,7 +128,6 @@ a {
     background-image: linear-gradient(to bottom,
     yellow, orange);
     display: flex;
-    align-items:center;
     line-height: 1.6;
 }
 
@@ -136,6 +135,7 @@ a {
     color: black;
     font-size: 30px;
     font-family: Sans-serif, Arial;
+    margin-bottom: 10%;
 }   
 
 .background-and-content-yellow p {
@@ -145,15 +145,17 @@ a {
     font-weight: 400;
 }
 
+#about-us-text {
+    margin: 2% 3% 0% 2%;
+}
+
 #about-us-image {
     height: fit-content;
     width: fit-content;
     margin-right: 6%;
+    align-self: center;
 }
 
-#about-us-text {
-    margin: 4%;
-}
     /*projetos*/
 .support-container {
     width: 100%;
@@ -198,7 +200,7 @@ a {
 }
 
 .lista-projetos{
-   margin: 40px 0;
+    margin: 40px 0;
 }
 .linha-projetos{
     display: flex;
@@ -268,7 +270,7 @@ a {
 /*Informações para contato*/
 #container-footer {
     width: 100%;
-    height: 300px;
+    height: 200px;
     background-image: linear-gradient(to bottom,
             rgb(187, 84, 52), rgb(233, 233, 55));
     display: flex;
@@ -300,6 +302,19 @@ a {
     margin-right: 0.4rem;
 }
 
+#logo-paz-pierre-resize {
+    height: 105px;
+    width: 215px;
+}
+
 #corretion-spacement-adress-footer {
     line-height: 1.3;
+}
+
+#sub-footer {
+    width: 100%;
+    padding: 30px 0;
+    background-color:rgb(233, 233, 55);
+    display: flex;
+    justify-content: center;
 }
