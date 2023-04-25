@@ -169,7 +169,8 @@ a {
     align-self: center;
 }
 
-    /*projetos*/
+    /*Inicio de projetos*/
+    
 .support-container {
     width: 100%;
     padding: 100px 0;
@@ -190,6 +191,7 @@ a {
     color: black;
     font-size: 24px;
     font-family: Sans-serif, Arial;
+    text-align: center;
 
 }   
 
