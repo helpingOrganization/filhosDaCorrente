@@ -17,7 +17,7 @@ a {
 /*Imagem principal*/
 
 #background-main-img {
-    background-image: url('/imagens/conteudo/associacaoMembros.jpg');
+    background-image: url('/imagens/associacaoMembros.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -44,7 +44,6 @@ a {
 }
 
 /*Logo barra de navegação*/
-
 
 #logo-header {
     margin: 0% 4%;
@@ -73,7 +72,7 @@ a {
 }
 
 #header-nav a:hover {
-    color: rgb(246, 199, 47);
+    color: rgb(59, 47, 8);
     transition: 0.2s;
 }
 
@@ -91,7 +90,6 @@ a {
 }
 
 /*Posiciona o título da associação*/
-
 
 #association-name-style {
     -webkit-text-stroke-width: 1.2px;
@@ -121,28 +119,25 @@ a {
 }
 
 /*Conteúdo e background*/
-
-.background-and-content-yellow {
+/*red*/
+.background-and-content-red {
     width: 100%;
     height: 650px;
     background-image: linear-gradient(to bottom,
-    yellow, orange);
+            rgb(227, 99, 13), rgb(204, 90, 14));
     display: flex;
     line-height: 1.6;
 }
 
-.background-and-content-yellow h2 {
+.background-and-content-red h2 {
     color: black;
     font-size: 30px;
     font-family: Sans-serif, Arial;
-    margin-bottom: 10%;
-}   
+}
 
-<<<<<<< HEAD:css/style.css
 #h2-line {
     display: flex;
     flex-direction: column;
-
 }
 
 #line {
@@ -153,90 +148,38 @@ a {
 }
 
 .background-and-content-red p {
-=======
-.background-and-content-yellow p {
->>>>>>> 3ae4f12e91aafefc1c172d8957c517cdf5061f36:css/mainPageStyle.css
     color: black;
     font-size: 20px;
     font-family: Sans-serif, Arial;
     font-weight: 400;
 }
 
+#about-us-image {
+    width: 600px;
+    margin-right: 6%;
+    height: fit-content;
+    width: fit-content;
+    align-self: center;
+    margin-right: 2%;
+}
+
 #about-us-text {
     margin: 2% 3% 0% 2%;
 }
 
-#about-us-image {
-    height: fit-content;
-    width: fit-content;
-    margin-right: 6%;
-    align-self: center;
-}
-
-    /*projetos*/
 .support-container {
     width: 100%;
-    padding: 100px 0;
-    background-image:linear-gradient(to bottom,
-    rgb(44, 159, 226), rgb(51, 108, 231));
-    display: block;
-    line-height: 1.6;
+    height: 150px;
+    background-color: rgb(242, 154, 53);
 }
 
-.support-container h2 {
-    color: black;
-    font-size: 30px;
-    font-family: Sans-serif, Arial;
-    text-align: center;
-}   
-
-.support-container h3 {
-    color: black;
-    font-size: 24px;
-    font-family: Sans-serif, Arial;
-
-}   
-
-.support-container p {
-    color: black;
-    font-size: 20px;
-    font-family: Sans-serif, Arial;
-
-}
-
-
-#background-blue {
+/*orange*/
+.background-and-content-orange {
     width: 100%;
-    height: 80px;
+    height: 800px;
     background-image: linear-gradient(to bottom,
-            rgb(91, 91, 244), rgb(24, 0, 122));
+            rgb(238, 151, 51), rgb(221, 102, 11));
 }
-
-.sub-titulo{
-    padding: 40px 50px 0;
-}
-
-.lista-projetos{
-    margin: 40px 0;
-}
-.linha-projetos{
-    display: flex;
-    justify-content: center;
-    margin: 20px 50px;
-}
-
-.item-projeto{
-    display: inline;
-    width: 300px;
-    padding: 20px;
-    margin: 0 50px;
-    background-color:#fff;
-    border-radius: 10px;
-}
-.item-projeto img{
-    width: 250px;
-}
-/*fim projetos*/
 
 @media (max-width: 400px) {
     #association-first-name {
@@ -263,19 +206,19 @@ a {
 }
 
 /*Rodapé*/
-
 /*Barra de medias*/
+
 #background-line-fale-conosco {
     width: 100%;
     height: fit-content;
     padding: 0.4%;
-    background-color: rgb(187, 84, 52);
+    background-color: rgb(238, 194, 17);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#background-line-fale-conosco a{
+#background-line-fale-conosco a {
     margin: 0% 2%;
 }
 
@@ -285,11 +228,11 @@ a {
 }
 
 /*Informações para contato*/
+
 #container-footer {
     width: 100%;
-    height: 200px;
-    background-image: linear-gradient(to bottom,
-            rgb(187, 84, 52), rgb(233, 233, 55));
+    height: 300px;
+    background-image: linear-gradient(to bottom,  rgb(239, 196, 24), rgb(215, 106, 3));
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -319,19 +262,6 @@ a {
     margin-right: 0.4rem;
 }
 
-#logo-paz-pierre-resize {
-    height: 105px;
-    width: 215px;
-}
-
 #corretion-spacement-adress-footer {
     line-height: 1.3;
-}
-
-#sub-footer {
-    width: 100%;
-    padding: 30px 0;
-    background-color:rgb(233, 233, 55);
-    display: flex;
-    justify-content: center;
 }
