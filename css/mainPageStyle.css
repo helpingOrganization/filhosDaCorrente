@@ -214,6 +214,7 @@ a {
     padding: 40px 50px 0;
 }
 
+
 .lista-projetos{
     margin: 40px 0;
 }
@@ -223,17 +224,21 @@ a {
     margin: 20px 50px;
 }
 
-.item-projeto{
+.item-projetos{
     display: inline;
     width: 300px;
     padding: 20px;
     margin: 0 50px;
-    background-color:#fff;
+    background-color:#af1313;
     border-radius: 10px;
+    
 }
-.item-projeto img{
+
+.item-projetos img{
     width: 250px;
 }
+
+
 /*fim projetos*/
 
 @media (max-width: 400px) {
