@@ -173,32 +173,30 @@ a {
     
 .support-container {
     width: 100%;
-    padding: 100px 0;
+    padding: 100px;
     background-image:linear-gradient(to bottom,
     rgb(44, 159, 226), rgb(51, 108, 231));
-    display: block;
-    line-height: 1.6;
+    display: flex;
+    justify-content: center;
 }
 
-.support-container h2 {
-    color: black;
-    font-size: 30px;
-    font-family: Sans-serif, Arial;
-    text-align: center;
-}   
+
 
 .support-container h3 {
     color: black;
     font-size: 24px;
     font-family: Sans-serif, Arial;
     text-align: center;
+    margin: 10px;
 
 }   
 
 .support-container p {
     color: black;
-    font-size: 20px;
+    font-size: 10px;
     font-family: Sans-serif, Arial;
+    text-align: center;
+    margin: 20px;
 
 }
 
@@ -210,10 +208,6 @@ a {
             rgb(91, 91, 244), rgb(24, 0, 122));
 }
 
-.sub-titulo{
-    padding: 40px 50px 0;
-}
-
 
 .lista-projetos{
     margin: 40px 0;
@@ -221,23 +215,31 @@ a {
 .linha-projetos{
     display: flex;
     justify-content: center;
-    margin: 20px 50px;
+    margin: 0 20px;
+    overflow: hidden;
 }
 
 .item-projetos{
-    display: inline;
+    height: 300x;
     width: 300px;
     padding: 20px;
-    margin: 0 50px;
-    background-color:#af1313;
-    border-radius: 10px;
-    
+    color: white;
+    margin: 20px;
+    box-shadow: 10px 10px 20px black;
+    box-sizing: border-box;
 }
 
 .item-projetos img{
+    height: 200px;
     width: 250px;
+    border-radius: 10px;
+    
+    
 }
 
+.item-projetos :hover{
+    cursor: pointer;
+}
 
 /*fim projetos*/
 
