@@ -227,6 +227,7 @@ a {
     margin: 20px;
     box-shadow: 10px 10px 20px black;
     box-sizing: border-box;
+    border-radius: 10px;
 }
 
 .item-projetos img{
