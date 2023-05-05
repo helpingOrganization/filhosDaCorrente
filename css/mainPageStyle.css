@@ -178,8 +178,12 @@ a {
         display: flex;
         justify-content: center;
       }
+      .titulo-projetos{
+        font-size: 35px;
+        padding: 2px 0 20px;
+      }
 
-      .support-container h2{
+      .support-container h2, h3{
         text-align: center;
         margin: 5px;
       }
@@ -194,9 +198,11 @@ a {
       
       .linha1 {
         display: flex;
+        margin: 10px;
       }
       .linha2 {
       display: flex;
+      margin: 10px;
       }
 
       /*Card 1 */
