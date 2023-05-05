@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: Sans-serif;
     scroll-behavior: smooth;
+    list-style: none;
 }
 
 a {
@@ -17,7 +18,7 @@ a {
 /*Imagem principal*/
 
 #background-main-img {
-    background-image: url('/imagens/conteudo/associacaoMembros.jpg');
+    background-image: url('../imagens/conteudo/associacaoMembros.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -40,30 +41,76 @@ a {
 
 .container-space-nav-corretion {
     width: 100%;
-    height: 90px;
+    height: 100px;
 }
 
 /*Logo barra de navegação*/
 
 
 #logo-header {
-    margin-left: 18px;
-    height: 90px;
-    width: 230px;
+    margin-left: 20px;
+    height: 98px;
+    width: 300px;
 }
 
 /*Menu para responsividade*/
 
-.mobile-menu {
-    margin: 0% 4%;
-}
+/*@media(max-width: 500px) {*/
 
-.mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: rgb(255, 255, 255);
-    margin: 8px;
-}
+    .hamburger-menu {
+        margin: 0% 4%;
+        z-index: 1;
+        cursor: pointer;
+    }
+    
+    .hamburger-menu div {
+        width: 32px;
+        height: 2px;
+        background: rgb(255, 255, 255);
+        margin: 8px;
+        transition: 0.4s;
+    }
+    
+    .side-bar {
+        top: 0;
+        right: -20rem;
+        position: fixed;
+        height: 100vh;
+        width: 20rem;
+        background-color: #000000;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        transition: all 0.5s;
+    }
+    
+    .side-bar ul li{
+        margin: 4rem 0rem;
+    }
+    
+    .show-menu {
+        right: 0;
+        transition: all 0.5s;
+    }
+    
+    .hamburger-transition div:nth-child(1) {
+        transform: translate(0, 9px) rotate(-45deg);
+        transition: 0.4s;
+    }
+    
+    .hamburger-transition div:nth-child(2) {
+        opacity: 0;
+        transition: 0.4s;
+    }
+    
+    .hamburger-transition div:nth-child(3) {
+        transform: translate(0, -11px) rotate(45deg);
+        transition: 0.4s;
+    }
+/*}*/
+
+
 
 /*Posicionamento da nav*/
 
@@ -132,10 +179,9 @@ a {
 }
 
 .background-and-content-red h2 {
-    color: black;
     font-size: 30px;
-    font-family: Sans-serif, Arial;
-}   
+}  
+
 
 #h2-line {
     display: flex;
@@ -150,11 +196,9 @@ a {
 }
 
 .background-and-content-red p {
-    color: black;
     font-size: 20px;
-    font-family: Sans-serif, Arial;
-    font-weight: 400;
 }
+
 
 #about-us-text {
     margin: 2% 3% 0% 2%;
@@ -167,93 +211,67 @@ a {
     align-self: center;
 }
 
-    /*projetos*/
+    /*Inicio de projetos*/
+    
 .support-container {
     width: 100%;
-    padding: 100px 0;
+    padding: 100px;
     background-image:linear-gradient(to bottom,
     rgb(44, 159, 226), rgb(51, 108, 231));
-    display: block;
-    line-height: 1.6;
+    display: flex;
+    justify-content: center;
 }
-
-.support-container h2 {
-    color: black;
-    font-size: 30px;
-    font-family: Sans-serif, Arial;
-    text-align: center;
-}   
 
 .support-container h3 {
     color: black;
     font-size: 24px;
     font-family: Sans-serif, Arial;
+    text-align: center;
+    margin: 10px;
 
 }   
 
 .support-container p {
     color: black;
-    font-size: 20px;
+    font-size: 1rem;
     font-family: Sans-serif, Arial;
+    text-align: center;
+    margin: 20px;
 
-}
-
-
-#background-blue {
-    width: 100%;
-    height: 80px;
-    background-image: linear-gradient(to bottom,
-            rgb(91, 91, 244), rgb(24, 0, 122));
-}
-
-.sub-titulo{
-    padding: 40px 50px 0;
 }
 
 .lista-projetos{
     margin: 40px 0;
 }
+
 .linha-projetos{
     display: flex;
     justify-content: center;
-    margin: 20px 50px;
+    margin: 0 20px;
+    overflow: hidden;
 }
 
-.item-projeto{
-    display: inline;
+.item-projetos{
+    height: 300x;
     width: 300px;
     padding: 20px;
-    margin: 0 50px;
-    background-color:#fff;
+    color: white;
+    margin: 20px;
+    box-shadow: 10px 10px 20px black;
+    box-sizing: border-box;
     border-radius: 10px;
 }
-.item-projeto img{
+
+.item-projetos img{
+    height: 200px;
     width: 250px;
+    border-radius: 10px;
+    
+    
 }
-/*fim projetos*/
 
-@media (max-width: 400px) {
-    #association-first-name {
-        width: fit-content;
-        color: white;
-        font-family: sans-serif;
-        margin: 22% 0% 0% 10%;
-        background-color: rgba(255, 204, 35, 0.969);
-        border-radius: 12px;
-        font-size: 10px;
-        padding: 8px;
-    }
-
-    #association-second-name {
-        width: fit-content;
-        color: white;
-        font-family: sans-serif;
-        margin: 2% 0% 0% 15%;
-        background-color: rgba(255, 204, 35, 0.967);
-        border-radius: 12px;
-        font-size: 10px;
-        padding: 8px;
-    }
+.item-projetos :hover{
+    cursor: pointer;
 }
 
 /*Rodapé*/
