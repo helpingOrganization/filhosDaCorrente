@@ -171,76 +171,247 @@ a {
 
     /*Inicio de projetos*/
     
-.support-container {
-    width: 100%;
-    padding: 100px;
-    background-image:linear-gradient(to bottom,
-    rgb(44, 159, 226), rgb(51, 108, 231));
-    display: flex;
-    justify-content: center;
-}
-
-
-
-.support-container h3 {
-    color: black;
-    font-size: 24px;
-    font-family: Sans-serif, Arial;
-    text-align: center;
-    margin: 10px;
-
-}   
-
-.support-container p {
-    color: black;
-    font-size: 10px;
-    font-family: Sans-serif, Arial;
-    text-align: center;
-    margin: 20px;
-
-}
-
-
-#background-blue {
-    width: 100%;
-    height: 80px;
-    background-image: linear-gradient(to bottom,
-            rgb(91, 91, 244), rgb(24, 0, 122));
-}
-
-
-.lista-projetos{
-    margin: 40px 0;
-}
-.linha-projetos{
-    display: flex;
-    justify-content: center;
-    margin: 0 20px;
-    overflow: hidden;
-}
-
-.item-projetos{
-    height: 300x;
-    width: 300px;
-    padding: 20px;
-    color: white;
-    margin: 20px;
-    box-shadow: 10px 10px 20px black;
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-
-.item-projetos img{
-    height: 200px;
-    width: 250px;
-    border-radius: 10px;
-    
-    
-}
-
-.item-projetos :hover{
-    cursor: pointer;
-}
+    .support-container{
+        padding: 10px;
+        background-image: linear-gradient(to bottom, rgb(44, 159, 226), rgb(51, 108, 231));
+        display: flex;
+        justify-content: center;
+      }
+      
+      .lista-cards{
+        padding: 40px 0;
+      }
+      
+      .linha1 {
+        display: flex;
+      }
+      .linha2 {
+      display: flex;
+      }
+      /*Card 1 */
+      .face {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        perspective: 700px;
+      }
+      
+      .front, .back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 700ms;
+      }
+      
+      .front {
+        background: limegreen;
+        z-index: 1;
+      }
+      
+      .back {
+        background: lightslategray;
+        transform: rotateY(-180deg);
+        backface-visibility: hidden;
+      }
+      
+      .face:hover .front {
+        transform: rotateY(180deg);
+        z-index: 0;
+      }
+      
+      .face:hover .back {
+        transform: rotateY(0);
+        z-index: 1;
+      }
+      
+      /*Card 2*/
+      .face2 {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        perspective: 700px;
+      }
+      .front2, .back2 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 700ms;
+      }
+      
+      .front2 {
+        background: limegreen;
+        z-index: 1;
+      }
+      
+      .back2 {
+        background: lightslategray;
+        transform: rotateY(-180deg);
+        backface-visibility: hidden;
+      }
+      
+      .face2:hover .front2 {
+        transform: rotateY(180deg);
+        z-index: 0;
+      }
+      
+      .face2:hover .back2 {
+        transform: rotateY(0);
+        z-index: 1;
+      }
+      /*Card 3*/
+      .face3 {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        perspective: 700px;
+      }
+      .front3, .back3 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 700ms;
+      }
+      
+      .front3 {
+        background: limegreen;
+        z-index: 1;
+      }
+      
+      .back3 {
+        background: lightslategray;
+        transform: rotateY(-180deg);
+        backface-visibility: hidden;
+      }
+      
+      .face3:hover .front3 {
+        transform: rotateY(180deg);
+        z-index: 0;
+      }
+      
+      .face3:hover .back3 {
+        transform: rotateY(0);
+        z-index: 1;
+      }
+      /*Card 4*/
+      .face4 {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        perspective: 700px;
+      }
+      .front4, .back4 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 700ms;
+      }
+      
+      .front4 {
+        background: limegreen;
+        z-index: 1;
+      }
+      
+      .back4 {
+        background: lightslategray;
+        transform: rotateY(-180deg);
+        backface-visibility: hidden;
+      }
+      
+      .face4:hover .front4 {
+        transform: rotateY(180deg);
+        z-index: 0;
+      }
+      
+      .face4:hover .back4 {
+        transform: rotateY(0);
+        z-index: 1;
+      }
+      /*Card 5*/
+      .face5 {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        perspective: 700px;
+      }
+      .front5, .back5 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 700ms;
+      }
+      
+      .front5 {
+        background: limegreen;
+        z-index: 1;
+      }
+      
+      .back5 {
+        background: lightslategray;
+        transform: rotateY(-180deg);
+        backface-visibility: hidden;
+      }
+      
+      .face5:hover .front5 {
+        transform: rotateY(180deg);
+        z-index: 0;
+      }
+      
+      .face5:hover .back5 {
+        transform: rotateY(0);
+        z-index: 1;
+      }
+      /*Card 6*/
+      .face6 {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        perspective: 700px;
+      }
+      .front6, .back6 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 700ms;
+      }
+      
+      .front6 {
+        background: limegreen;
+        z-index: 1;
+      }
+      
+      .back6 {
+        background: lightslategray;
+        transform: rotateY(-180deg);
+        backface-visibility: hidden;
+      }
+      
+      .face6:hover .front6 {
+        transform: rotateY(180deg);
+        z-index: 0;
+      }
+      
+      .face6:hover .back6 {
+        transform: rotateY(0);
+        z-index: 1;
+      }
 
 /*fim projetos*/
 
