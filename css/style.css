@@ -154,6 +154,16 @@ a {
 #about-us-text {
     margin: 4%;
 }
+
+#about-us-image {
+    height: fit-content;
+    width: fit-content;
+    margin-right: 6%;
+}
+
+#about-us-text {
+    margin: 4%;
+}
     /*projetos*/
 .support-container {
     width: 100%;
