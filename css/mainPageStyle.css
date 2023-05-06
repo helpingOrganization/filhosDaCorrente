@@ -35,7 +35,7 @@ a {
     background-color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
-    padding-left: 2%;
+    padding-left: 1.5%;
 }
 
 /*Dá o espaço do tamanho da nav*/
@@ -49,13 +49,13 @@ a {
 
 #logo-header {
     height: 95px;
-    width: 270px;
+    width: 260px;
 }
 
 /*Menu para responsividade*/
 
 .hamburger-menu {
-    margin: 0% 4%;
+    margin-right: 4%;
     z-index: 1;
     cursor: pointer;
     display: none;
@@ -120,26 +120,25 @@ a {
 /*Posicionamento da nav*/
 
 #header-nav {
-    margin-left: 10%;
     width: 100%;
 }
 
 #header-nav a:hover {
-    color: rgb(59, 47, 8);
+    color: rgb(255, 202, 28);
     transition: 0.2s;
 }
 
 #header-nav nav ul {
     list-style: none;
     display: flex;
+    justify-content: center;
 }
 
 #header-nav li {
-    padding: 10px;
     font-size: 18px;
     letter-spacing: 2px;
     white-space: nowrap;
-    margin: 0% 2.5%;
+    padding: 2.5%;
 }
 
 /*Posiciona o título da associação*/
