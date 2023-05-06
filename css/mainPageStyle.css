@@ -203,8 +203,19 @@ a {
 }
 
 /*imagens do item programacao*/
-.card-1 {
-    background-color: aqua;
+.programing-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card{
+    width: 950px;
+    height: 550px;
+    margin: 4%;
+    background-color: violet;
+    border: 5px solid black;
+
 }
 
 .programing-list {
