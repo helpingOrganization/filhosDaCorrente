@@ -55,8 +55,6 @@ a {
 
 /*Menu para responsividade*/
 
-/*@media(max-width: 500px) {*/
-
     .hamburger-menu {
         margin: 0% 4%;
         z-index: 1;
@@ -68,7 +66,7 @@ a {
         height: 2px;
         background: rgb(255, 255, 255);
         margin: 8px;
-        transition: 0.4s;
+        transition: 0.3s;
     }
     
     .side-bar {
@@ -82,7 +80,7 @@ a {
         display: flex;
         justify-content: center;
         align-items:center;
-        transition: all 0.5s;
+        transition: all 0.4s;
     }
     
     .side-bar ul li{
@@ -91,26 +89,23 @@ a {
     
     .show-menu {
         right: 0;
-        transition: all 0.5s;
+        transition: all 0.4s;
     }
     
     .hamburger-transition div:nth-child(1) {
         transform: translate(0, 9px) rotate(-45deg);
-        transition: 0.4s;
+        transition: 0.3s;
     }
     
     .hamburger-transition div:nth-child(2) {
         opacity: 0;
-        transition: 0.4s;
+        transition: 0.3s;
     }
     
     .hamburger-transition div:nth-child(3) {
         transform: translate(0, -11px) rotate(45deg);
-        transition: 0.4s;
+        transition: 0.3s;
     }
-/*}*/
-
-
 
 /*Posicionamento da nav*/
 
