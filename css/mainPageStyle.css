@@ -17,7 +17,7 @@ a {
 /*Imagem principal*/
 
 #background-main-img {
-    background-image: url('/imagens/associacaoMembros.jpg');
+    background-image: url('/imagens/conteudo/associacaoMembros.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -124,7 +124,7 @@ a {
     width: 100%;
     height: 650px;
     background-image: linear-gradient(to bottom,
-            rgb(227, 99, 13), rgb(204, 90, 14));
+    rgb(227, 99, 13), rgb(204, 90, 14));
     display: flex;
     line-height: 1.6;
 }
@@ -174,11 +174,63 @@ a {
 }
 
 /*orange*/
+
 .background-and-content-orange {
     width: 100%;
     height: 800px;
     background-image: linear-gradient(to bottom,
-            rgb(238, 151, 51), rgb(221, 102, 11));
+    rgb(238, 151, 51), rgb(221, 102, 11));
+}
+
+/*beige*/
+.background-and-content-beige{
+    width: 100%;
+    height: 800px;
+    background-image: linear-gradient(to bottom,
+    rgb(238, 160, 57), rgb(208, 144, 15));
+
+}
+
+#programing-text {
+    padding: 2% 3% 0% 2%;
+}
+
+.background-and-content-beige h2 {
+    color: black;
+    font-size: 30px;
+    font-family: sans-serif, Arial;
+    text-align: center;
+}
+
+/*imagens do item programacao*/
+.card-1 {
+    background-color: aqua;
+}
+
+.programing-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 9%;
+}   
+.image-1 {
+    width: 300px;
+    height: 400px;
+    margin-left: 3%;
+
+}
+
+.image-2 {
+    width: 300px;
+    height: 400px;
+    margin-left: 3%;
+
+}
+
+.image-3 {
+    width: 300px;
+    height: 400px;
+    margin-left: 3%;
 }
 
 @media (max-width: 400px) {
@@ -239,7 +291,7 @@ a {
     align-items: center;
 }
 
-#container-footer h3 {
+#container-footer h2 {
     margin-bottom: 3%;
 }
 
