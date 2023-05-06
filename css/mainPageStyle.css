@@ -47,7 +47,6 @@ a {
 
 /*Logo barra de navegação*/
 
-
 #logo-header {
     height: 95px;
     width: 270px;
@@ -126,7 +125,7 @@ a {
 }
 
 #header-nav a:hover {
-    color: rgb(246, 199, 47);
+    color: rgb(59, 47, 8);
     transition: 0.2s;
 }
 
@@ -144,7 +143,6 @@ a {
 }
 
 /*Posiciona o título da associação*/
-
 
 #association-name-style {
     -webkit-text-stroke-width: 1.2px;
@@ -174,12 +172,11 @@ a {
 }
 
 /*Conteúdo e background*/
-
 .background-and-content-red {
     width: 100%;
     height: 650px;
     background-image: linear-gradient(to bottom,
-            rgb(227, 99, 13), rgb(204, 90, 14));
+    rgb(227, 99, 13), rgb(204, 90, 14));
     display: flex;
     line-height: 1.6;
 }
@@ -281,7 +278,6 @@ a {
 }
 
 /*Rodapé*/
-
 /*Barra de medias*/
 
 .background-footer-color {
@@ -312,6 +308,7 @@ footer {
 }
 
 /*Informações para contato*/
+
 #container-footer {
     width: 100%;
     height: 200px;
@@ -321,7 +318,7 @@ footer {
     align-items: center;
 }
 
-#container-footer h3 {
+#container-footer h2 {
     margin-bottom: 3%;
 }
 
