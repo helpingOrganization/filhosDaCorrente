@@ -1,0 +1,143 @@
+/*Padronização da página*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Sans-serif;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    height: 100Vh;
+}
+
+/*Cabeçalho*/
+
+#container-header {
+    position: fixed;
+    background-color: rgb(252, 211, 30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.container-space-nav-corretion {
+    top: 0;
+    height: 90px;
+    width: 100%;
+}
+
+#logo-header {
+    height: 88px;
+    width: 288px;
+}
+
+/*background*/
+
+#background-main-img {
+    background-image: url('../imagens/conteudo/capoeiraEvent.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/*Fomulário*/    
+
+#container-form-blur {
+    height: 600px;
+    width: 800px;
+    margin-bottom: 80px;
+    border-radius: 15px;
+    background-color: rgba(83, 83, 83, 0.216);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 15px 11px 0px rgba(0, 0, 0, 0.777);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#form-camps-to-type .form-camps-container-spacement {
+    color: white;
+    margin: 20% 0%;
+}
+
+.form-camps-container-spacement div {
+    margin: 0% 0% 2% 4%;
+}
+
+.form-camps-style {
+    padding: 10px;
+    border-radius: 80px;
+    border: unset;
+    outline: 0;
+}
+
+#containter-spacement-shaft {
+    height: 50px;
+    width: 80%;
+    margin: 2% 0%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#circle-shaft {
+    height: 40px;
+    width: 40px;
+    margin-right: 24%;
+    border-radius: 360px;
+    box-shadow: 3px 5px 7px 2px rgba(0, 0, 0, 0.827);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: unset;
+    outline: 0;
+}
+
+#shaft-img-position {
+    height: 25px;
+    width: 25px;
+    margin-left: 2px;
+}
+
+@media (max-width: 400px) {
+
+}
+
+/*Rodapé*/
+
+#container-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(252, 211, 30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-footer a {
+    margin: 0% 1.5%;
+}
+
+.social-media-icons {
+    width: 35px;
+    height: 35px;
+}
