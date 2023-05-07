@@ -199,13 +199,8 @@ body {
     align-self: center;
 }
 
-<<<<<<< HEAD
     /*INICIO DE PROJETOS*/
     
-=======
-/*Inicio de projetos*/
-
->>>>>>> 6f8fe3f28d29e580157a43629a12cf346204152d
 .support-container {
     width: 100%;
     padding: 140px;
@@ -227,27 +222,15 @@ body {
     visibility: hidden;
     opacity: 0;
 }
-<<<<<<< HEAD
-.lista-projetos{
-    margin: 40px 0;
-}
-.linha-projetos{
-=======
 
 .linha-projetos {
->>>>>>> 6f8fe3f28d29e580157a43629a12cf346204152d
     display: flex;
     justify-content: center;
     margin: 0 20px;
     overflow: hidden;
 }
-<<<<<<< HEAD
 .item-projetos{
     height: 300x;
-=======
-
-.item-projetos {
->>>>>>> 6f8fe3f28d29e580157a43629a12cf346204152d
     width: 300px;
     color: white;
     margin: 30px;
@@ -271,10 +254,6 @@ body {
     box-shadow: 0px 5px 20px black;
     border-radius: 5%
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 6f8fe3f28d29e580157a43629a12cf346204152d
 .item-projetos:hover{
     cursor: pointer;
 }
@@ -292,9 +271,8 @@ body {
     visibility: visible;
     color: white;
 }
-<<<<<<< HEAD
-/*FIM PROJETOS*/
-=======
+
+/*FIM DE PROJETOS*/
 
 /*programção*/
 .container-beige {
@@ -332,7 +310,6 @@ body {
     width: 100%;
     overflow: hidden;
 }
->>>>>>> 6f8fe3f28d29e580157a43629a12cf346204152d
 
 /*Rodapé*/
 /*Barra de medias*/
