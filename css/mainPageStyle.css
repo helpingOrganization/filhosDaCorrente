@@ -207,7 +207,7 @@ a {
     align-self: center;
 }
 
-    /*Inicio de projetos*/
+    /*INICIO DE PROJETOS*/
     
 .support-container {
     width: 100%;
@@ -228,19 +228,15 @@ a {
     visibility: hidden;
     opacity: 0;
 }
-
-
 .lista-projetos{
     margin: 40px 0;
 }
-
 .linha-projetos{
     display: flex;
     justify-content: center;
     margin: 0 20px;
     overflow: hidden;
 }
-
 .item-projetos{
     height: 300x;
     width: 300px;
@@ -252,12 +248,10 @@ a {
     position: relative;
 
 }
-
 .item-projetos img{
     width: 100%;
     border-radius: 5%;
 }
-
 .intro {
     height: 25%;
     width: 100%;
@@ -270,8 +264,6 @@ a {
     border-radius: 5%
 
 }
-
-
 .item-projetos:hover{
     cursor: pointer;
 }
@@ -287,13 +279,7 @@ a {
     visibility: visible;
     color: white;
 }
-
-.item-projetos img:hover{
-
-}
-
-
-
+/*FIM PROJETOS*/
 
 /*Rodapé*/
 
