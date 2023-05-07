@@ -13,24 +13,27 @@
     <div id="background-main-img">
         <header>
             <section>
-                <div class="container-space-nav-corretion"></div> <!--Dá margem do tamanho da nav-->
+                <div id="nav-scroll-smooth" class="container-space-nav-corretion"></div>
+                <!--Dá margem do tamanho da nav-->
                 <div id="container-header" class="container-space-nav-corretion">
                     <!--container com todo conteúdo do cabeçalho-->
 
                     <a href="mainPage.html" title="Associação Cultural Filhos da Corrente">
                         <img id="logo-header" src="../imagens/logos/logoHeader.png" alt="Logo do cabeçalho">
                     </a>
+
+
                     <div id="header-nav">
                         <nav> <!--barra de navegação do site-->
                             <ul>
                                 <li>
-                                    <a href="mainPage.html">Home</a>
+                                    <a href="#nav-scroll-smooth">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#background-blue">Sobre nós</a>
+                                    <a href="#about-us-scroll-smooth">Sobre nós</a>
                                 </li> <!--adicionar os respectivos links no lugar do "#"-->
                                 <li>
-                                    <a href="#">Projetos</a>
+                                    <a href="#projects-scroll-smooth">Projetos</a>
                                 </li>
                                 <li>
                                     <a href="#">Programação</a>
@@ -49,9 +52,9 @@
                         </nav>
                     </div>
                     <div class="hamburger-menu">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </div>
 
                     <div class="side-bar">
@@ -60,7 +63,7 @@
                                 <a href="mainPage.html">Home</a>
                             </li>
                             <li>
-                                <a href="#background-blue">Sobre nós</a>
+                                <a href="#about-us-scroll-smooth">Sobre nós</a>
                             </li> <!--adicionar os respectivos links no lugar do "#"-->
                             <li>
                                 <a href="#">Projetos</a>
@@ -80,28 +83,13 @@
                             </li>
                         </ul>
                     </div>
-
                 </div>
             </section>
         </header>
-
-        <section>
-            <div id="association-name-style">
-                <div id="association-first-name">
-                    <h1>
-                        ASSOCIAÇÃO CULTURAL
-                    </h1>
-                </div>
-                <div>
-                    <h1 id="association-second-name">
-                        FILHOS DA CORRENTE
-                    </h1>
-                </div>
-            </div>
-        </section>
     </div> <!--Fim da div de imagem principal-->
 
     <section> <!--Primeiro texto-->
+        <div id="about-us-scroll-smooth"></div> <!--Rolagem sutil até o texto sobre nós-->
         <div class="background-and-content-red">
             <div id="about-us-text">
                 <div id="h2-line">
@@ -126,18 +114,15 @@
                 </p>
             </div>
             <div id="about-us-image">
-
-                <img src="../imagens/sobrenos-capoeira.jpg">
-                <img src="../imagens/sobrenos-capoeira.jpg">
-                <img src="../imagens/sobre-nos-imagi-2.png">
-
+                <img src="">
             </div>
         </div>
     </section>
     <!--Parte de Projetos-->
     <section>
-        <div class="support-container">
+        <div id="projects-scroll-smooth" class="support-container">
             <div class="sub-titulo">
+                
             </div>
             <div class="lista-projetos">
                 <div class="linha-projetos">
@@ -147,7 +132,10 @@
                             <h3>Entrega de leite </h3>
                             <p>aqui está o texto descritivo do curso</p>
                         </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6f8fe3f28d29e580157a43629a12cf346204152d
                     </div>
 
                     <div class="item-projetos">
@@ -192,13 +180,35 @@
                             <h3>Meio ambiente </h3>
                             <p>aqui está o texto descritivo do curso</p>
                         </div>
-
-
                     </div>
                 </div>
             </div>
         </div>
 
+    </section>
+
+    <section>
+        <div class="container-beige">
+            <div class="programing-title">
+                <h2>
+                    PROGRAMAÇÃO
+                </h2>
+            </div>
+            <div class="container-card">
+                <div class="card">
+                    <img class="image-programing" src="..\imagens\conteudo\zooEvent.png">
+                    <button>Saiba mais</button>
+                </div>
+                <div class="card">
+                    <img class="image-programing" src="..\imagens\conteudo\cinemaEvent.jpg">
+                    <button>Saiba mais</button>
+                </div>
+                <div class="card">
+                    <img class="image-programing" src="../imagens/conteudo/aquariumEvent.jpg">
+                    <button>Saiba mais</button>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -215,7 +225,7 @@
                     <img class="social-media-icons" src="../imagens/icons/youtube-icon-white.png" alt="Icone youtube">
                 </a>
             </div>
-            <div id="container-footer">
+            <div class="background-footer-color" id="container-footer">
                 <div>
                     <div id="corretion-spacement-tel-footer">
                         <div class="img-and-title-footer">
@@ -244,11 +254,14 @@
                     <p>Jd. Almeida Prado</p>
                     <p>CEP: 04854-200</p>
                 </div>
-                <img id="logo-paz-pierre-resize" src="../imagens/logos/logoPazPierre.png"
-                    alt="Parceria contabilidade Paz & Pierre">
-                <img src="../imagens/logos/spAssociation.png" alt="Parceria prefeitura e Associação">
+                <a id="easter-egg" target="_blank"
+                    href="https://ricardiohemmel.github.io/site-de-contabilidade/TRABALHO%20SITE/home/index.html">
+                    <img class="partnership-logo-resize" src="../imagens/logos/logoPazPierre.png"
+                        alt="Parceria contabilidade Paz & Pierre">
+                </a>
+                <img class="partnership-logo-resize" src="/imagens/logos/fundoSocial.png" alt="Parceria Fundo Social">
             </div>
-            <div id="sub-footer">
+            <div class="background-footer-color" id="sub-footer">
                 <p>
                     <i>Copyright - Associação Cultural Filhos da Corrente - Todos os Direitos Reservados - By
                         HelpingOrganization
