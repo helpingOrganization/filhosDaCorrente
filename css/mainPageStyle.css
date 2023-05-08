@@ -16,7 +16,7 @@ a {
 }
 
 body {
-    min-width: 1200px;
+    min-width: 1100px;
 }
 
 /*Imagem principal*/
@@ -117,6 +117,10 @@ body {
         display: block;
     }
 
+    .side-bar {
+        position: fixed;
+    }
+
     #header-nav nav ul li{
         display: none;
     }
@@ -154,7 +158,7 @@ body {
 
 /*Conteúdo e background*/
 
-.background-and-content-red {
+.about-us-background-and-content {
     width: 100%;
     height: 650px;
     background-image: url("/imagens/conteudo/backgroundYellowBlack.jpg");
@@ -165,8 +169,10 @@ body {
     line-height: 1.6;
 }
 
-.background-and-content-red h2 {
-    font-size: 30px;
+.about-us-background-and-content h2 {
+    font-size: 2rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: .2rem;
 }
 
 
@@ -176,20 +182,19 @@ body {
 }
 
 #line {
-    width: 200px;
+    width: 320px;
     border-top: 4px solid black;
     border-radius: 8px;
     margin-bottom: 8%;
 }
 
-.background-and-content-red p {
+.about-us-background-and-content p {
     font-size: 20px;
 }
 
-
 #about-us-text {
     margin: 2% 3% 0% 2%;
-    max-width: 800px;
+    max-width: 700px;
 }
 
 #about-us-image {
@@ -201,75 +206,64 @@ body {
 
 /*Inicio de projetos*/
 
-.support-container {
+.projects-background-and-content {
     width: 100%;
     padding: 140px;
     background-image: linear-gradient(to bottom,
             rgb(44, 159, 226), rgb(51, 108, 231));
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-.support-container h3{
-    margin: 10px;
-    font-size: 20px;
+.lista-projetos {
     text-align: center;
+    color: white;
 }
 
-.support-container p{
-    font-size: 10px;
-    margin: 20px;
+.projects-background-and-content p{
+    font-size: 0.8rem;
     visibility: hidden;
-    opacity: 0;
 }
 
 .linha-projetos {
     display: flex;
     justify-content: center;
-    margin: 0 20px;
-    overflow: hidden;
 }
 
 .item-projetos {
     width: 300px;
-    color: white;
     margin: 30px;
-    box-shadow: 10px 10px 20px black;
-    box-sizing: border-box;
-    border-radius: 5%;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.769);
+    border-radius: 20px;
     position: relative;
+    flex: 1 1 150px;
 }
+
 .item-projetos img{
     width: 100%;
-    border-radius: 5%;
+    border-radius: 20px;
 }
+
 .intro {
-    height: 25%;
+    height: 75px;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     position: absolute;
-    bottom: 0%;
+    bottom: 0;
     background: slategray;
     transition: .5s;
-    box-shadow: 0px 5px 20px black;
-    border-radius: 5%
-}
-.item-projetos:hover{
-    cursor: pointer;
+    border-radius: 20px;
 }
 
 .item-projetos:hover .intro{
-    height: 50%;
-    bottom: 30%;
+    height: 180px;
     background: black;
     position: absolute;
-    bottom: 0%;
 }
 
 .item-projetos:hover p{
-    opacity: 1;
     visibility: visible;
-    color: white;
 }
 
 /*programção*/
@@ -313,7 +307,7 @@ body {
 /*Barra de medias*/
 
 .background-footer-color {
-    background-color: #2b2626;
+    background-color: #232323;
 }
 
 footer {
@@ -326,7 +320,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #484646;
+    background-color: #2b2b2b;
 }
 
 #background-line-fale-conosco a {
