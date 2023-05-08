@@ -239,12 +239,10 @@ body {
     border-radius: 5%;
     position: relative;
 }
-
 .item-projetos img{
     width: 100%;
     border-radius: 5%;
 }
-
 .intro {
     height: 25%;
     width: 100%;
@@ -256,7 +254,6 @@ body {
     box-shadow: 0px 5px 20px black;
     border-radius: 5%
 }
-
 .item-projetos:hover{
     cursor: pointer;
 }
