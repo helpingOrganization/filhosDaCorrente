@@ -1,5 +1,11 @@
 /*Padronização da página*/
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --titulo: 'Bebas Neue';
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -160,48 +166,37 @@ body {
 
 .about-us-background-and-content {
     width: 100%;
-    height: 650px;
-    background-image: url("/imagens/conteudo/backgroundYellowBlack.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 750px;
+    background-color: #000000;
+    color: white;
     display: flex;
     line-height: 1.6;
 }
 
 .about-us-background-and-content h2 {
-    font-size: 2rem;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: .2rem;
-}
-
-
-#h2-line {
-    display: flex;
-    flex-direction: column;
-}
-
-#line {
-    width: 320px;
-    border-top: 4px solid black;
-    border-radius: 8px;
-    margin-bottom: 8%;
+    font-size: 3.3em;
+    font-family: var(--titulo);
+    letter-spacing: .2em;
+    margin-bottom: 10%;
 }
 
 .about-us-background-and-content p {
-    font-size: 20px;
+    font-size: 1.5em;
 }
 
 #about-us-text {
-    margin: 2% 3% 0% 2%;
-    max-width: 700px;
+    max-width: 40%;
+    margin: 3% 2% 0% 4%;
 }
 
-#about-us-image {
-    height: fit-content;
-    width: fit-content;
-    margin-right: 6%;
-    align-self: center;
+#about-us-image {  
+    height: 100%; 
+}
+
+#about-us-image img{
+    object-fit: cover;
+    height: 100%;
+    width: 118%;
 }
 
 /*Inicio de projetos*/
