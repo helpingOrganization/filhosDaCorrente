@@ -264,9 +264,8 @@ body {
 /*programção*/
 .container-beige {
     width: 100%;
-    height: 1300px;
-    background-image: linear-gradient(to bottom,
-    rgb(227, 99, 13), rgb(204, 90, 14));
+    height: 850px;
+    background-color: grey;
 }
 
 .programing-title{
@@ -279,24 +278,33 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; 
-    margin: 3% 4%;
-    border: 3px solid black;
+    margin: 10% 2%;
 }
 
 .card {
-    width: 400px;
-    height: 600px;
-    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.641);
-    border: 4px solid black;
-    margin: 0% 4%; 
-}
+    position: relative; 
+    width: 350px; 
+    height: 450px;
+    margin: 0% 5%;
 
-.image-programing {
-    position: relative;
-    height: 100%;
+  }
+  .card img {
+    position: absolute;
     width: 100%;
-    overflow: hidden;
-}
+    height: 100%; 
+    object-fit: cover;
+    opacity: 1;
+    transition: 0.5s ease-in-out; 
+    transform: 0.5s ease-in-out;
+    border-radius: 1%;
+  }
+  
+  .card:hover img {
+    opacity: 0.6;
+    transform: scale(0.9);
+  }
+
+
 
 /*Rodapé*/
 /*Barra de medias*/
