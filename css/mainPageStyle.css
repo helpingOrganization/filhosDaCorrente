@@ -7,7 +7,7 @@
 }
 
 .tittles-style {
-    font-size: 2.7em;
+    font-size: clamp(2em, 2em + 1vw, 3em);
     font-family: var(--titulo);
     letter-spacing: .2em;
     color: white;
@@ -195,11 +195,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about-us-background-and-content p {
-    font-size: 1.2em;
+    font-size: calc(1.5em)
 }
 
 #about-us-text {
-    max-width: 40%;
+    max-width: 45%;
     margin: 3% 2% 0% 4%;
 }
 
@@ -210,7 +210,7 @@ body::-webkit-scrollbar-thumb {
 #about-us-image img {
     object-fit: cover;
     height: 100%;
-    width: 118%;
+    width: 110%;
 }
 
 /*Inicio de projetos*/
