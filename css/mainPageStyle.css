@@ -200,14 +200,17 @@ body {
 }
 
 /*INICIO DE PROJETOS*/
-
 .support-container {
     width: 100%;
     padding: 2%;
-    background-image: linear-gradient(to bottom, rgb(44, 159, 226), rgb(51, 108, 231));
     display: flex;
     justify-content: center;
-
+    background-image: url('../imagens/conteudo/imgprojetos/fundo-projetos.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0px 5px 20px black;
+    
 }
 
 .support-container h3 {
@@ -227,7 +230,7 @@ body {
     position: absolute;
     font-size: 150%;
     text-decoration: underline;
-    text-underline-offset: 10px;
+    text-underline-offset: 15px;
 }
 
 .lista-projetos{
