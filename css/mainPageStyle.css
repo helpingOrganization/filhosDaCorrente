@@ -240,15 +240,14 @@ body {
 .linha-projetos {
     display: flex;
     justify-content: center;
-    margin: 20px 20px;
+    margin: 1% 1%;
     overflow: hidden;
 }
 
 .item-projetos {
-    height: 300x;
-    width: 300px;
+    width: 20%;
     color: white;
-    margin: 30px;
+    margin: 2%;
     box-shadow: 10px 10px 20px black;
     box-sizing: border-box;
     border-radius: 5%;
@@ -263,7 +262,6 @@ body {
 .intro {
     height: 25%;
     width: 100%;
-    padding: 10px;
     position: absolute;
     bottom: 0%;
     background: rgb(0, 0, 0);
