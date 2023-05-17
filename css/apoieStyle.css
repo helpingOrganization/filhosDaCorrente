@@ -68,6 +68,19 @@ a {
     #container-form-blur {
         height: 100vh;
         width: 100vw;
+        backdrop-filter: blur(8px);
+    }
+
+    #container-footer a {
+        padding: 5%;
+    }
+}
+
+@media (max-height: 800px) {
+    #container-form-blur {
+        height: 100vh;
+        width: 100vw;
+        backdrop-filter: blur(8px);
     }
 
     #container-footer a {
@@ -139,6 +152,6 @@ a {
 }
 
 .social-media-icons {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
 }
