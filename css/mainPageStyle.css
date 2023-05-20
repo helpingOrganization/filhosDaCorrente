@@ -220,8 +220,6 @@ body::-webkit-scrollbar-thumb {
     background-position: center;
     background-attachment: fixed;
     box-shadow: inset 0px 5px 20px black;
-
-    
 }
 
 .support-container h3 {
@@ -313,11 +311,6 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
     visibility: visible;
 }
-.item-projetos:hover .inscrevase {
-
-}
-
-
 @keyframes anim {
     0% {
         transform: scale(1);
