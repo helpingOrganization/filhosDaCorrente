@@ -13,24 +13,27 @@
     <div id="background-main-img">
         <header>
             <section>
-                <div class="container-space-nav-corretion"></div> <!--Dá margem do tamanho da nav-->
+                <div id="nav-scroll-smooth" class="container-space-nav-corretion"></div>
+                <!--Dá margem do tamanho da nav-->
                 <div id="container-header" class="container-space-nav-corretion">
                     <!--container com todo conteúdo do cabeçalho-->
 
-                    <a href="mainPage.html" title="Associação Cultural Filhos da Corrente">
+                    <a href="#nav-scroll-smooth" title="Associação Cultural Filhos da Corrente">
                         <img id="logo-header" src="../imagens/logos/logoHeader.png" alt="Logo do cabeçalho">
                     </a>
+
+
                     <div id="header-nav">
                         <nav> <!--barra de navegação do site-->
                             <ul>
                                 <li>
-                                    <a href="mainPage.html">Home</a>
+                                    <a href="#nav-scroll-smooth">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#background-blue">Sobre nós</a>
+                                    <a href="#about-us-scroll-smooth">Sobre nós</a>
                                 </li> <!--adicionar os respectivos links no lugar do "#"-->
                                 <li>
-                                    <a href="#">Projetos</a>
+                                    <a href="#sub">Projetos</a>
                                 </li>
                                 <li>
                                     <a href="#">Programação</a>
@@ -49,9 +52,9 @@
                         </nav>
                     </div>
                     <div class="hamburger-menu">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </div>
 
                     <div class="side-bar">
@@ -60,10 +63,10 @@
                                 <a href="mainPage.html">Home</a>
                             </li>
                             <li>
-                                <a href="#background-blue">Sobre nós</a>
+                                <a href="#about-us-scroll-smooth">Sobre nós</a>
                             </li> <!--adicionar os respectivos links no lugar do "#"-->
                             <li>
-                                <a href="#">Projetos</a>
+                                <a href="#sub">Projetos</a>
                             </li>
                             <li>
                                 <a href="#">Programação</a>
@@ -80,36 +83,18 @@
                             </li>
                         </ul>
                     </div>
-
                 </div>
             </section>
         </header>
-
-        <section>
-            <div id="association-name-style">
-                <div id="association-first-name">
-                    <h1>
-                        ASSOCIAÇÃO CULTURAL
-                    </h1>
-                </div>
-                <div>
-                    <h1 id="association-second-name">
-                        FILHOS DA CORRENTE
-                    </h1>
-                </div>
-            </div>
-        </section>
     </div> <!--Fim da div de imagem principal-->
 
     <section> <!--Primeiro texto-->
-        <div class="background-and-content-red">
+        <div id="about-us-scroll-smooth"></div> <!--Rolagem sutil até o texto sobre nós-->
+        <div class="about-us-background-and-content">
             <div id="about-us-text">
-                <div id="h2-line">
-                    <h2>
-                        SOBRE NÓS
-                    </h2>
-                    <div id="line"></div>
-                </div>
+                <h2 class="tittles-style">
+                    FILHOS DA CORRENTE
+                </h2>
                 <p>
                     Somos uma organização cultural sem fins lucrativos com reconhecimento internacional. Atendemos
                     crianças,
@@ -126,102 +111,153 @@
                 </p>
             </div>
             <div id="about-us-image">
-
-                <img src="../imagens/sobrenos-capoeira.jpg">
-                <img src="../imagens/sobrenos-capoeira.jpg">
-                <img src="../imagens/sobre-nos-imagi-2.png">
-
+                <img src="../imagens/conteudo/blackMan.png" alt="Homem negro na seção sobre nós">
             </div>
         </div>
     </section>
-    <!--Parte de Projetos-->
-    <section>
-        <div class="support-container">
+
+        <!--INICIO Parte de Projetos-->
+    <section class="section-project">
+        <div id="sub" class="support-container"> <!--ID usado para scroll ao clicar em projetos na barra de navegação-->
             <div class="sub-titulo">
+                <h2>PROJETOS</h2>
             </div>
             <div class="lista-projetos">
-                <div class="linha-projetos">
-                    <div class="item-projetos">
-                        <img class="projetos" src="../imagens/conteudo/leite-projetos (Personalizado).jpg">
-                        <h3>Entrega de leite </h3>
-                        <p>aqui está o texto descritivo do curso</p>
-
+                <div class="linha-projetos"> <!--INICIO 1º Linha composta de 3 cards-->
+                    <div class="item-projetos"> 
+                        <img class="imgprojetos" src="../imagens/conteudo/imgprojetos/leite-projetos.png" alt="Diversos saquinhos de leite um litro empilhados com imagem de rosto sorridente estampada na embalagem com a seguinte frase 'leite das crianças' e mais informações sobre de fabricação, validade tabela nutricional e etc">
+                        <div class="sub-card"> 
+                            <h3>Entrega de leite </h3>
+                            <p>O programa de entrega de leite visa fornecer um alimento essencial a população de baixa
+                                renda, entregas feitas nas terças e quintas (09:00 ás 18:00) </p>
+                            <div class="inscrevase">
+                                <a href="https://www.google.com/maps/place/R.+Dante+Ambr%C3%B3sio,+84+-+Jardim+Almeida+Prado,+S%C3%A3o+Paulo+-+SP,+04854-200/@-23.775663,-46.6873511,3a,75y,91.12h,90t/data=!3m6!1e1!3m4!1st5oHsi8rzit4FZAAL6-DUg!2e0!7i16384!8i8192!4m7!3m6!1s0x94ce48be2e45b067:0xe705530a11177ec3!8m2!3d-23.7756659!4d-46.6870403!10e5!16s%2Fg%2F11b8v83ypw?entry=ttu" target="_blank">Local de entrega</a>
+                            </div>
+                        </div>
                     </div>
 
+
                     <div class="item-projetos">
-                        <img class="projetos" src="../imagens/conteudo/cesta-projetos.jpg">
-                        <h3>Distribuição de cestas básicas </h3>
-                        <p>aqui está o texto descritivo do curso</p>
+                        <img class="imgprojetos" src="../imagens/conteudo/imgprojetos/cesta-projetos.jpg" alt="Uma caixa media com todos os itens que compoem uma cesta basica: arroz, feijão, óleo, e etc.">
+                        <div class="sub-card">
+                            <h3>Cestas básicas </h3>
+                            <p>Como parte do apoio às famílias em situação de vulnerabilidade realizamos a distribuição
+                                de cestas básicas em quatro ocasiões ao longo do ano</p>
+                            <div class="inscrevase">
+                                <a href="apoie.html" target="_blank">Inscreva-se</a>
+                            </div>
+                        </div>
 
                     </div>
                     <div class="item-projetos">
-                        <img class="projetos" src="../imagens/conteudo/pedreiro-projetos (Personalizado).jpg">
-                        <h3>Curso de pedreiro </h3>
-                        <p>aqui está o texto descritivo do curso</p>
+                        <img class="imgprojetos" src="../imagens/conteudo/imgprojetos/pedreiro-projetos.png" alt="Pedreiro levantando uma parede com cimento e bloco">
+                        <div class="sub-card">
+                            <h3>Curso de pedreiro </h3>
+                            <p>O curso de pedreiro é uma oportunidade oferecida para capacitar pessoas interessadas na
+                                área da construção civil</p>
+                            <div class="inscrevase">
+                                <a href="apoie.html" target="_blank">Inscreva-se</a>
+                            </div>
+                        </div>
 
 
                     </div>
+                </div> <!--FIM 1º Linha composta de 3 cards-->
+
+                <div class="linha-projetos"> <!--INICIO 2º Linha composta de 3 cards-->
+                    <div class="item-projetos"> <!--CARD-->
+                        <img class="imgprojetos" src="../imagens/conteudo/imgprojetos/costura-projetos.png" alt="Uma senhora em uma maquina de costura costurando">
+                        <div class="sub-card"> <!--Parte que possui transição e está sobreposta ao card-->
+                            <h3>Curso de costura </h3>
+                            <p>O curso de costura é uma iniciativa voltada para capacitar indivíduos interessados no
+                                mercado de trabalho da moda e confecção</p>
+                            <div class="inscrevase"> 
+                                <a href="apoie.html" target="_blank">Inscreva-se</a> <!--Botão com link que aparece ao posicionar o mouse em cima do card-->
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="item-projetos">
+                        <img class="imgprojetos" src="../imagens/conteudo/imgprojetos/roda-prjoetos.jpeg" alt="Jovens adulto e crianças em uma roda jogando capoeira">
+                        <div class="sub-card">
+                            <h3>Oficina de capoeira </h3>
+                            <p>A oficina de capoeira é uma atividade oferecida com o objetivo de promover a cultura
+                                afro-brasileira e incentivar a prática de atividades físicas</p>
+                            <div class="inscrevase">
+                                <a href="apoie.html" target="_blank">Inscreva-se</a> 
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item-projetos">
+                        <img class="imgprojetos" src="../imagens/conteudo/imgprojetos/crianca-projetos.png" alt="Crianças com uniforme da associação carregando plantas cuidando do meio hambiente">
+                        <div class="sub-card">
+                            <h3>Meio ambiente </h3>
+                            <p>A Associação Cultural Filhos da Corrente realiza diversos projetos voltados para a
+                                preservação e conscientização ambiental. Essas iniciativas visam sensibilizar a
+                                população sobre a importância da conservação dos recursos naturais e do meio ambiente
+                                como um todo</p>
+                            <div class="inscrevase"> 
+                                <a href="apoie.html" target="_blank">Increva-se</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--FIM 2º Linha composta de 3 cards-->
+            </div>
+        </div>
+    </section>
+        <!--FIM Parte de Projetos--> 
+
+    <section>
+        <div class="schedule-background-and-content">
+            <div class="programing-title">
+                <h2 class="tittles-style">
+                    PROGRAMAÇÃO
+                </h2>
+            </div>
+            <div class="container-card">
+                <div class="card">
+                    <img src="..\imagens\conteudo\cinemaEvento.jpeg">
+                    <a href="apoie.html">
+                        <button class="botao">Saiba Mais</button>
+                    </a>
                 </div>
-                <div class="linha-projetos">
-                    <div class="item-projetos">
-                        <img class="projetos" src="../imagens/conteudo/costura-projetos (Personalizado).jpg">
-                        <h3>Curso de costura </h3>
-                        <p>aqui está o texto descritivo do curso</p>
-
-
-                    </div>
-                    <div class="item-projetos">
-                        <img class="projetos" src="../imagens/conteudo/capoeira-projetos (Personalizado).JPG">
-                        <h3>Oficina de capoeira </h3>
-                        <p>aqui está o texto descritivo do curso</p>
-
-
-                    </div>
-                    <div class="item-projetos">
-                        <img class="projetos" src="../imagens/conteudo/meio-projetos (Personalizado).jpeg">
-                        <h3>Meio ambiente </h3>
-                        <p>aqui está o texto descritivo do curso</p>
-
-
-                    </div>
+                <div class="card">
+                    <img src="..\imagens\conteudo\zooEvento.jpeg">
+                    <a href="apoie.html">
+                        <button class="botao">Saiba Mais</button>
+                    </a>
+                </div>
+                <div class="card">
+                    <img src="..\imagens\conteudo\aquarioEvento.jpeg">
+                    <a href="apoie.html">
+                        <button class="botao">Saiba Mais</button>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="background-and-content-blue">
-        </div>
-        <div class="background-and-content-blue">
-        </div>
-
     </section>
 
     <footer>
         <section>
-            <div id="background-line-fale-conosco">
+            <div class="background-footer-color" id="background-line-fale-conosco">
                 <a target="_blank" href="https://www.instagram.com/filhos_da_corrente/?utm_medium=copy_link">
-
-                    <img class="social-media-icons" src="../imagens/instagram-icon.png" alt="Icone instagram">
+                    <img class="social-media-icons" src="../imagens/icons/instagram-icon-white.png"
+                        alt="Icone instagram">
                 </a>
                 <a target="_blank" href="https://www.facebook.com/filhosdacorrente/">
-                    <img class="social-media-icons" src="../imagens/facebook-icon.png" alt="Icone Facebook">
+                    <img class="social-media-icons" src="../imagens/icons/facebook-icon-white.png" alt="Icone Facebook">
                 </a>
                 <a target="_blank" href="https://www.youtube.com/channel/UCwUOI-TksM1toF0ceJByLBA">
-                    <img class="social-media-icons" src="../imagens/youtube-icon.png" alt="Icone youtube">
-
-                    <img class="social-media-icons" src="../imagens/icons/instagram-icon.png" alt="Icone instagram">
-                </a>
-                <a target="_blank" href="https://www.facebook.com/filhosdacorrente/">
-                    <img class="social-media-icons" src="../imagens/icons/facebook-icon.png" alt="Icone Facebook">
-                </a>
-                <a target="_blank" href="https://www.youtube.com/channel/UCwUOI-TksM1toF0ceJByLBA">
-                    <img class="social-media-icons" src="../imagens/icons/youtube-icon.png" alt="Icone youtube">
-
+                    <img class="social-media-icons" src="../imagens/icons/youtube-icon-white.png" alt="Icone youtube">
                 </a>
             </div>
-            <div id="container-footer">
+            <div class="background-footer-color" id="container-footer">
                 <div>
                     <div id="corretion-spacement-tel-footer">
                         <div class="img-and-title-footer">
-                            <img class="icons-footer-resize" src="../imagens/icons/whatsapp-icon.png"
+                            <img class="icons-footer-resize" src="../imagens/icons/whatsapp-icon-white.png"
                                 alt="Icone whatsapp">
                             <h3>Telefone e Whatsapp:</h3>
                         </div>
@@ -229,7 +265,8 @@
                     </div>
                     <div>
                         <div class="img-and-title-footer">
-                            <img class="icons-footer-resize" src="../imagens/icons/email-icon.png" alt="Icone whatsapp">
+                            <img class="icons-footer-resize" src="../imagens/icons/email-icon-white.png"
+                                alt="Icone whatsapp">
                             <h3>E-mail:</h3>
                         </div>
                         <p>filhosdacorrente@yahoo.com.br</p>
@@ -237,18 +274,22 @@
                 </div>
                 <div id="corretion-spacement-adress-footer">
                     <div class="img-and-title-footer">
-                        <img class="icons-footer-resize" src="../imagens/icons/adrres-icon.png" alt="Icone de Endereço">
+                        <img class="icons-footer-resize" src="../imagens/icons/adrres-icon-white.png"
+                            alt="Icone de Endereço">
                         <h3>Endereço:</h3>
                     </div>
                     <p>Rua Dante Ambrósio, 84</p>
                     <p>Jd. Almeida Prado</p>
                     <p>CEP: 04854-200</p>
                 </div>
-                <img id="logo-paz-pierre-resize" src="../imagens/logos/logoPazPierre.png"
-                    alt="Parceria contabilidade Paz & Pierre">
-                <img src="../imagens/logos/spAssociation.png" alt="Parceria prefeitura e Associação">
+                <a id="easter-egg" target="_blank"
+                    href="https://ricardiohemmel.github.io/site-de-contabilidade/TRABALHO%20SITE/home/index.html">
+                    <img class="partnership-logo-resize" src="../imagens/logos/logoPazPierre.png"
+                        alt="Parceria contabilidade Paz & Pierre">
+                </a>
+                <img class="partnership-logo-resize" src="../imagens/logos/fundoSocial.png" alt="Parceria Fundo Social">
             </div>
-            <div id="sub-footer">
+            <div class="background-footer-color" id="sub-footer">
                 <p>
                     <i>Copyright - Associação Cultural Filhos da Corrente - Todos os Direitos Reservados - By
                         HelpingOrganization
