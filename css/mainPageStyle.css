@@ -144,7 +144,7 @@ body::-webkit-scrollbar-thumb {
         position: fixed;
     }
 
-    #header-nav nav ul li{
+    #header-nav nav ul li {
         display: none;
     }
 
@@ -216,7 +216,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: yellow;
+    background-color: rgba(245, 245, 245, 0.696);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -224,15 +224,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 .support-container h3 {
-    margin: 10px;
-    font-size: 20px;
+    margin: 2%;
+    font-size: 1.5em;
     text-align: center;
-    color: white;
 }
 
 .support-container p {
-    font-size: 10px;
+    font-size: 0.8rem;
     visibility: hidden;
+    text-align: center;
+    margin: 2%;
 }
 
 .sub-titulo {
@@ -242,24 +243,27 @@ body::-webkit-scrollbar-thumb {
     color: white;
     font-size: 150%;
     text-align: center;
-    margin: 30px 0px 0px 0px ;
+    margin: 30px 0px 0px 0px;
+    text-shadow: 0.1em 0.1em 0.2em black
 }
 
-.lista-projetos{
-    margin: 30px 0px 0px 0px ;
+.lista-projetos {
+    margin: 30px 0px 0px 0px;
+    
+
 }
 
 .linha-projetos {
     display: flex;
     justify-content: center;
     margin: 1% 1%;
-    overflow: hidden;
+
 }
 
 .item-projetos {
     width: 20vw;
     color: white;
-    margin: 2%;
+    margin: 2.3% 2%;
     box-shadow: 10px 10px 20px black;
     box-sizing: border-box;
     border-radius: 5%;
@@ -269,12 +273,13 @@ body::-webkit-scrollbar-thumb {
 
 .item-projetos img {
     width: 100%;
-    border-radius: 4%;
+    border-radius: 5%;
+    box-sizing: border-box;
 }
 
-.intro {
-    height: 12vh;
-    width: 100%;
+.sub-card {
+    height: 15vh;
+    width: 20vw;
     position: absolute;
     bottom: 0%;
     background: rgb(0, 0, 0);
@@ -288,30 +293,33 @@ body::-webkit-scrollbar-thumb {
 }
 .inscrevase {
     width: 8vw;
-    margin: 20% 0% 0% 0%;
-    font-size: 20px;
+    margin-top: 4%;
+    font-size: 100%;
     text-align: center;
     border: solid 2px;
     border-color: rgb(255, 255, 255);
     border-radius: 8px;
-    
+
+}
+.inscrevase a {
+    padding: 1%;
 }
 
 .item-projetos:hover {
     cursor: pointer;
 }
 
-.item-projetos:hover .intro {
-    height: 30vh;
+.item-projetos:hover .sub-card {
+    height: 28vh;
     bottom: 0%;
     background: black;
     position: absolute;
 }
 
 .item-projetos:hover p {
-    opacity: 1;
     visibility: visible;
 }
+
 @keyframes anim {
     0% {
         transform: scale(1);
@@ -330,6 +338,30 @@ body::-webkit-scrollbar-thumb {
     animation-direction: alternate;
 }
 
+@media (max-width: 500px) {
+    .linha-projetos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .item-projetos{
+        width: 50vw;
+    }
+    .sub-card{
+        height: 15vh;
+        width: 50vw;
+
+    }
+    .item-projetos:hover .sub-card {
+        height: 28vh;
+    }
+    .inscrevase {
+        width: 100%;
+    }
+}
+
+
 /*FIM DE PROJETOS*/
 
 .schedule-background-and-content {
@@ -339,7 +371,7 @@ body::-webkit-scrollbar-thumb {
     padding-top: 3%;
 }
 
-.programing-title{
+.programing-title {
     font-family: var(--titulo);
     margin-left: 4%;
 }
@@ -347,7 +379,7 @@ body::-webkit-scrollbar-thumb {
 .container-card {
     display: flex;
     justify-content: space-around;
-    align-items: center; 
+    align-items: center;
     margin: 2% 4%;
     background-color: rgb(95, 92, 81);
     border-radius: 6px;
@@ -355,10 +387,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card {
-    position: relative; 
+    position: relative;
     width: 23%;
     height: fit-content;
-    transition: 0.4s ease-in-out; 
+    transition: 0.4s ease-in-out;
     transform: 0.1s ease-in-out;
     border-radius: 7px;
 }
@@ -373,7 +405,7 @@ body::-webkit-scrollbar-thumb {
     opacity: 0.8;
     transform: scale(.95);
     filter: brightness(50%);
-    
+
 }
 
 @media (max-width: 500px) {
