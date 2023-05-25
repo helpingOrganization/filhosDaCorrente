@@ -248,7 +248,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .lista-projetos {
-    margin: 30px 0px 0px 0px;
+    margin-top: 5%
     
 
 }
@@ -278,7 +278,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sub-card {
-    height: 15vh;
+    height: 14vh;
     width: 20vw;
     position: absolute;
     bottom: 0%;
@@ -299,6 +299,8 @@ body::-webkit-scrollbar-thumb {
     border: solid 2px;
     border-color: rgb(255, 255, 255);
     border-radius: 8px;
+    position: relative;
+    bottom: 1%;
 
 }
 .inscrevase a {
