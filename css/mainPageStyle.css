@@ -229,12 +229,12 @@ body::-webkit-scrollbar-thumb {
 
 .support-container h3 {
     margin-top: 5%;
-    font-size: 1.6em;
+    font-size: 100%;
     text-align: center;
 }
 
 .support-container p {
-    font-size: 1rem;
+    font-size: 80%;
     visibility: hidden;
     text-align: center;
     margin: 8%;
@@ -273,9 +273,8 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
 }
 
-.item-projetos img {
+.imgprojetos {
     width: 100%;
-    border-radius: 5%;
 }
 
 .sub-card {
@@ -286,7 +285,7 @@ body::-webkit-scrollbar-thumb {
     background: rgb(0, 0, 0);
     transition: .5s;
     box-shadow: 0px 5px 20px black;
-    border-radius: 5%;
+    border-radius: 8%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -312,7 +311,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .item-projetos:hover .sub-card {
-    height: 80%;
+    height: 65%;
     bottom: 0%;
     background: black;
     position: absolute;
