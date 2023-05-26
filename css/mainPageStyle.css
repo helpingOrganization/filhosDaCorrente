@@ -44,7 +44,7 @@ body::-webkit-scrollbar-thumb {
 /*Imagem principal*/
 
 #background-main-img {
-    background-image: url("/imagens/conteudo/capoeiraEvent.jpg");
+    background-image: url("../imagens/conteudo/capoeiraEvent.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
