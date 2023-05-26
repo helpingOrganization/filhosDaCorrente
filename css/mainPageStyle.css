@@ -45,7 +45,7 @@ body::-webkit-scrollbar-thumb {
 /*Imagem principal*/
 
 #background-main-img {
-    background-image: url("/filhosDaCorrente/imagens/conteudo/capoeiraEvent.jpg");
+    background-image: url("/imagens/conteudo/capoeiraEvent.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -216,14 +216,18 @@ body::-webkit-scrollbar-thumb {
 
 /*Inicio de projetos*/
 
-.projects-background-and-content {
+.section-project {
     width: 100%;
     padding: 140px;
-    background-image: linear-gradient(to bottom,
-    black, rgb(44, 41, 41));
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-image: url("/imagens/conteudo/imgprojetos/fundo-projetos.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0px 5px 20px black;
+    
 }
 
 .lista-projetos {
@@ -231,21 +235,37 @@ body::-webkit-scrollbar-thumb {
     color: white;
 }
 
-.projects-background-and-content p{
+.section-project p{
     font-size: 0.8rem;
     visibility: hidden;
+    opacity: 0;
+}
+
+.sub-titulo {
+    position: absolute;
+    font-size: 150%;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+}
+
+.lista-projetos{
+    margin: 90px 0px 0px 0px ;
 }
 
 .linha-projetos {
     display: flex;
     justify-content: center;
+    margin: 1% 1%;
+    overflow: hidden;
 }
 
 .item-projetos {
-    width: 300px;
-    margin: 30px;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.769);
-    border-radius: 20px;
+    width: 26vw;
+    color: white;
+    margin: 2%;
+    box-shadow: 10px 10px 20px black;
+    box-sizing: border-box;
+    border-radius: 5%;
     position: relative;
     flex: 1 1 150px;
 }
@@ -258,7 +278,6 @@ body::-webkit-scrollbar-thumb {
 .intro {
     height: 75px;
     width: 100%;
-    padding: 20px;
     position: absolute;
     bottom: 0;
     background: slategray;
