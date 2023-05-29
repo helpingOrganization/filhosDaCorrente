@@ -31,6 +31,7 @@ body {
     min-width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
+
 }
 
 body::-webkit-scrollbar {
@@ -44,7 +45,7 @@ body::-webkit-scrollbar-thumb {
 /*Imagem principal*/
 
 #background-main-img {
-    background-image: url("/imagens/conteudo/capoeiraEvent.jpg");
+    background-image: url("../imagens/conteudo/capoeiraEvent.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -186,6 +187,7 @@ body::-webkit-scrollbar-thumb {
     background-color: #000000;
     color: white;
     display: flex;
+    position: relative;
 
 }
 
@@ -208,15 +210,24 @@ body::-webkit-scrollbar-thumb {
 #about-us-image {
     width: 50vw;
 }
-#negro{
+
+#negro {
     width: 100%;
     height: 100%;
+}
+#about-us{
+    /* DIV para levar usuario ao clicar em SOBRE NÓS no menu de navegação */
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+
 }
 
 /*INICIO DE PROJETOS*/
 .support-container {
     width: 100%;
     padding: 2%;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -241,6 +252,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sub-titulo {
+    /*Titulo principal PROJETOS*/
     width: 100%;
     font-family: var(--titulo);
     letter-spacing: .2em;
@@ -251,18 +263,21 @@ body::-webkit-scrollbar-thumb {
     text-shadow: 0.1em 0.1em 0.2em black
 }
 
-.lista-projetos {
-    margin-top: 5%
+.lista-projects {
+    /*div que comporta os cards*/
+    margin-top: 1%
 }
 
-.linha-projetos {
+.linha-projects {
+    /* 2 linhas compostas de 3 cards cada*/
     display: flex;
     justify-content: center;
     margin: 1% 1%;
 
 }
 
-.item-projetos {
+.item-projects {
+    /*card principal que contem as imagens e o sub card preto dentro*/
     width: 20%;
     color: white;
     margin: 2% 2%;
@@ -273,11 +288,13 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
 }
 
-.imgprojetos {
+.imgprojects {
+    /*imagem dos cards*/
     width: 100%;
 }
 
 .sub-card {
+    /*card preto com animação ao passar o mouse*/
     height: 23%;
     width: 100%;
     position: absolute;
@@ -290,8 +307,10 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     align-items: center;
 }
+
 .inscrevase {
-    width: 80%;
+    /*botão inscrevase e local de entrega dentro do sub card preto*/
+    width: 65%;
     margin-top: 4%;
     font-size: 100%;
     text-align: center;
@@ -302,26 +321,24 @@ body::-webkit-scrollbar-thumb {
     bottom: 1%;
 
 }
-.inscrevase a {
-    padding: 1%;
-}
 
-.item-projetos:hover {
+.item-projects:hover {
     cursor: pointer;
 }
 
-.item-projetos:hover .sub-card {
-    height: 65%;
+.item-projects:hover .sub-card {
+    height: 85%;
     bottom: 0%;
     background: black;
     position: absolute;
 }
 
-.item-projetos:hover p {
+.item-projects:hover p {
     visibility: visible;
 }
 
 @keyframes anim {
+    /* animação para o botão inscrevase/local de entrega dentro do sub-card preto */
     0% {
         transform: scale(1);
     }
@@ -331,7 +348,7 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-.item-projetos:hover .inscrevase {
+.item-projects:hover .inscrevase {
     animation-name: anim;
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
@@ -339,30 +356,40 @@ body::-webkit-scrollbar-thumb {
     animation-direction: alternate;
 }
 
-@media (max-width: 500px) {
-    .linha-projetos {
+@media (max-width: 900px) {
+    /*empilhamento dos itens de projects a partir de 900px*/ 
+    .linha-projects {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
     }
-    .item-projetos{
+
+    .item-projects {
         width: 50vw;
     }
-    .sub-card{
-        height: 15vh;
+
+    .sub-card {
+        height: 14vh;
         width: 50vw;
 
     }
-    .item-projetos:hover .sub-card {
-        height: 28vh;
+
+    .item-projects:hover .sub-card {
+        height: 70%;
     }
+
     .inscrevase {
-        width: 100%;
+        width: 55%;
     }
 }
 
-
+#scroll-project {
+    /* div para levar usuario ao clicar em projetos no menu de navegação */
+    position: absolute;
+    bottom: 13%;
+    left: 20%;
+}
 /*FIM DE PROJETOS*/
 
 .schedule-background-and-content {
@@ -383,23 +410,28 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     margin: 2% 4%;
     background-color: rgb(95, 92, 81);
+    padding: 40px;
     border-radius: 6px;
-    height: 80%;
+    height: 80vh;
 }
 
 .card {
     position: relative;
-    width: 23%;
-    height: fit-content;
+    width: 21vw;
+    height: 60vh;
+    box-shadow: 12px 10px 15px rgba(0, 0, 0, 0.769);
     transition: 0.4s ease-in-out;
     transform: 0.1s ease-in-out;
     border-radius: 7px;
 }
 
 .card img {
+    position: absolute;
     width: 100%;
+    height: 100%;
     border-radius: 7px;
-    box-shadow: 12px 10px 15px rgba(0, 0, 0, 0.769);
+    object-fit: cover;
+
 }
 
 .card:hover {
@@ -407,6 +439,27 @@ body::-webkit-scrollbar-thumb {
     transform: scale(.95);
     filter: brightness(50%);
 
+}
+
+.botao {
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    width: 8vw;
+    height: 5.5vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #000000;
+    border-radius: 10px;
+    color: rgb(247, 248, 250);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.card:hover .botao {
+    opacity: 2;
 }
 
 @media (max-width: 500px) {
@@ -427,6 +480,12 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+#scroll-schedule {
+    /* div para levar usuario ao clicar em PROGRAMAÇÃO no menu de navegação */
+    position: absolute;
+    bottom: 9%;
+    left: 20%;
+}
 /*Rodapé*/
 /*Barra de medias*/
 

@@ -39,7 +39,7 @@ a {
 /*Fomulário e background*/    
 
 #form-position {
-    background-image: url("/imagens/conteudo/capoeiraEvent.jpg");
+    background-image: url("../imagens/conteudo/capoeiraEvent.jpg");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
