@@ -232,9 +232,6 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     justify-content: center;
     background-color: rgba(245, 245, 245, 0.696);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     box-shadow: inset 0px 5px 20px black;
 }
 
