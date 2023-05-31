@@ -44,7 +44,7 @@ body::-webkit-scrollbar-thumb {
 /*Imagem principal*/
 
 #background-main-img {
-    background-image: url("/imagens/conteudo/capoeiraEvent.jpg");
+    background-image: url("../imagens/conteudo/capoeiraEvent.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -195,7 +195,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about-us-background-and-content p {
-    font-size: calc(1.5em)
+    font-size: calc(1.5em);
 }
 
 #about-us-text {
@@ -218,8 +218,7 @@ body::-webkit-scrollbar-thumb {
 .projects-background-and-content {
     width: 100%;
     padding: 140px;
-    background-image: linear-gradient(to bottom,
-            rgb(44, 159, 226), rgb(51, 108, 231));
+    background-color:#424040;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -278,9 +277,9 @@ body::-webkit-scrollbar-thumb {
 /*INICIO DE PROGRAMAÇÃO*/
 
 .schedule-background-and-content {
+    background-color: #424040;
     width: 100%;
     height: 110vh;
-    background-color: rgb(57, 57, 51);
     padding-top: 3%;
 }
 
@@ -294,7 +293,6 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-around;
     align-items: center; 
     margin: 2% 4%;
-    background-color: rgb(95, 92, 81);
     padding: 40px;
     border-radius: 6px;
     height: 80vh;
@@ -327,12 +325,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 .botao {
+    display:flex;
     position: absolute;
+    align-items: center;
+    justify-content: center;
     top: 50%;
     left: 33%;
     width: 8vw;
     height: 5.5vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: bold;
     background-color: #000000;
