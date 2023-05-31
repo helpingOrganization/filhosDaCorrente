@@ -16,7 +16,6 @@
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
     font-family: Sans-serif;
     scroll-behavior: smooth;
     list-style: none;
@@ -32,6 +31,7 @@ body {
     min-width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
+
 }
 
 body::-webkit-scrollbar {
@@ -144,7 +144,7 @@ body::-webkit-scrollbar-thumb {
         position: fixed;
     }
 
-    #header-nav nav ul li{
+    #header-nav nav ul li {
         display: none;
     }
 
@@ -183,11 +183,12 @@ body::-webkit-scrollbar-thumb {
 
 .about-us-background-and-content {
     width: 100%;
-    height: 90vh;
+    height: 50%;
     background-color: #000000;
     color: white;
     display: flex;
-    line-height: 1.6;
+    position: relative;
+
 }
 
 .about-us-background-and-content h2 {
@@ -196,16 +197,30 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about-us-background-and-content p {
-    font-size: calc(1.5em);
+    font-size: 1.7em;
+    line-height: 1.6em;
 }
 
-#about-us-text {
+.about-us-text {
+
     max-width: 45%;
     margin: 3% 2% 0% 4%;
 }
 
-#about-us-image {
+.about-us-image {
+    width: 50vw;
+}
+
+#negro {
+    width: 100%;
     height: 100%;
+}
+
+/* DIV para levar usuario ao clicar em SOBRE NÓS no menu de navegação */
+#about-us{
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
 }
 
 #about-us-image img {
@@ -218,85 +233,160 @@ body::-webkit-scrollbar-thumb {
 
 .section-project {
     width: 100%;
-    padding: 140px;
     background-color:#424040;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    background-image: url("/imagens/conteudo/imgprojetos/fundo-projetos.png");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     box-shadow: inset 0px 5px 20px black;
-    
 }
 
-.lista-projetos {
+.support-container h3 {
+    margin-top: 5%;
+    font-size: 100%;
     text-align: center;
-    color: white;
 }
 
-.section-project p{
-    font-size: 0.8rem;
+.support-container p {
+    font-size: 80%;
     visibility: hidden;
-    opacity: 0;
+    text-align: center;
+    margin: 8%;
 }
 
+/*Titulo principal PROJETOS*/
 .sub-titulo {
-    position: absolute;
+    width: 100%;
+    font-family: var(--titulo);
+    letter-spacing: .2em;
+    color: white;
     font-size: 150%;
-    text-decoration: underline;
-    text-underline-offset: 15px;
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+    text-shadow: 0.1em 0.1em 0.2em black
 }
 
-.lista-projetos{
-    margin: 90px 0px 0px 0px ;
+/*div que comporta os cards*/
+.lista-projects { 
+    margin-top: 1%
 }
 
-.linha-projetos {
+/* 2 linhas compostas de 3 cards cada*/
+.linha-projects { 
     display: flex;
     justify-content: center;
     margin: 1% 1%;
+}
+
+/*card principal que contem as imagens e o sub card preto dentro*/
+.item-projects {
+    width: 20%;
+    color: white;
+    margin: 2% 2%;
+    box-shadow: 10px 10px 20px black;
+    box-sizing: border-box;
+    border-radius: 8%;
+    position: relative;
     overflow: hidden;
 }
 
-.item-projetos {
-    width: 26vw;
-    color: white;
-    margin: 2%;
-    box-shadow: 10px 10px 20px black;
-    box-sizing: border-box;
-    border-radius: 5%;
-    position: relative;
-    flex: 1 1 150px;
-}
-
-.item-projetos img{
+.imgprojects {
     width: 100%;
-    border-radius: 20px;
 }
 
-.intro {
-    height: 75px;
+/*card preto com animação ao passar o mouse*/
+.sub-card {
+    height: 23%;
     width: 100%;
     position: absolute;
-    bottom: 0;
-    background: slategray;
+    bottom: 0%;
+    background: rgb(0, 0, 0);
     transition: .5s;
-    border-radius: 20px;
+    box-shadow: 0px 5px 20px black;
+    border-radius: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.item-projetos:hover .intro{
-    height: 180px;
-    background: black;
+/*botão Inscrevase/Local de entrega dentro do sub card preto*/
+.inscrevase {
+    width: 65%;
+    height: 8%;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    border: solid 2px;
+    border-color: whitesmoke;
+    border-radius: 8px;
+    position: relative;
+    color: #000000;
+    transition: .8s;
+    display: flex;
+    align-items: center;
+}
+
+.inscrevase a{
+    color: #ffffff;
+    width: 100%;
+}
+
+.inscrevase:hover {
+    border-color: #ffffff;
+    background-color: whitesmoke;
+}
+
+.inscrevase:hover a{
+    color: #000000;
+}
+
+.item-projects:hover .sub-card {
+    height: 100%;
+    bottom: 0%;
     position: absolute;
+    justify-content: space-around;
 }
 
-.item-projetos:hover p{
+.item-projects:hover p {
     visibility: visible;
+    transition: .8s;
 }
 
-/*INICIO DE PROGRAMAÇÃO*/
+/*empilhamento dos itens de projects a partir de 900px*/ 
+@media (max-width: 900px) {
+
+    .linha-projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .item-projects {
+        width: 50vw;
+    }
+
+    .sub-card {
+        height: 14vh;
+        width: 50vw;
+
+    }
+
+    .item-projects:hover .sub-card {
+        height: 70%;
+    }
+
+    .inscrevase {
+        width: 55%;
+    }
+}
+
+/* div para levar usuario ao clicar em projetos no menu de navegação */
+#scroll-project {
+    position: absolute;
+    bottom: 13%;
+    left: 20%;
+}
+
+/*FIM DE PROJETOS*/
 
 .schedule-background-and-content {
     background-color: #424040;
@@ -305,7 +395,7 @@ body::-webkit-scrollbar-thumb {
     padding-top: 3%;
 }
 
-.programing-title{
+.programing-title {
     font-family: var(--titulo);
     margin-left: 4%;
 }
@@ -313,11 +403,11 @@ body::-webkit-scrollbar-thumb {
 .container-card {
     display: flex;
     justify-content: space-around;
-    align-items: center; 
+    align-items: center;
     margin: 2% 4%;
     padding: 40px;
     border-radius: 6px;
-    height: 80%;
+    height: 80vh;
 }
 
 .card {
@@ -328,7 +418,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card img {
+    position: absolute;
     width: 100%;
+    height: 100%;
     border-radius: 7px;
     box-shadow: 12px 10px 15px rgba(0, 0, 0, 0.769);
     transition: 0.4s ease-in-out; 
