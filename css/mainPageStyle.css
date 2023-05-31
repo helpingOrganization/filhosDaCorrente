@@ -231,10 +231,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(245, 245, 245, 0.696);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-color: rgba(245, 245, 245, 0.541);
     box-shadow: inset 0px 5px 20px black;
 }
 
@@ -485,6 +482,65 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     bottom: 9%;
     left: 20%;
+}
+
+    /*Container DOAÇÕES */
+
+    .container-doacao h3 {
+        margin-top: 5%;
+        font-size: 100%;
+        text-align: center;
+    }
+    
+    .container-doacao p {
+        font-size: 80%;
+        text-align: center;
+        margin: 8%;
+    }
+.container-doacao {
+    width: 100%;
+    height: 50%;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    position: relative;
+}
+
+#crianca{
+    width: 100%;
+    height: 100%;
+}
+#doe-title{
+    text-align: center;
+}
+.sub-container-doacoes{
+    width: 100%;
+    height: 15%;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+}
+.cards-doacoes{
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    height: 60%;
+    margin: 2%;
+    border: solid;
+    border-radius: 5%;
+}
+.cards-doacoes a{
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    color: #000000;
+    align-items: center;
+    justify-content: center;
+    transition: .8s;
+}
+
+.cards-doacoes:hover a{
+        background:#000000;
+        color: white;
 }
 /*Rodapé*/
 /*Barra de medias*/
