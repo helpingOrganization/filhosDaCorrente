@@ -331,9 +331,6 @@ body::-webkit-scrollbar-thumb {
 .inscrevase:hover a{
     color: #000000;
 }
-.item-projects:hover {
-    cursor: pointer;
-}
 
 .item-projects:hover .sub-card {
     height: 100%;
