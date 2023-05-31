@@ -201,7 +201,7 @@ body::-webkit-scrollbar-thumb {
     line-height: 1.5em;
 }
 
-#about-us-text {
+.about-us-text {
 
     max-width: 45%;
     margin: 3% 2% 0% 4%;
