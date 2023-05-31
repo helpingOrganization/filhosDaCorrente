@@ -207,7 +207,7 @@ body::-webkit-scrollbar-thumb {
     margin: 3% 2% 0% 4%;
 }
 
-#about-us-image {
+.about-us-image {
     width: 50vw;
 }
 
