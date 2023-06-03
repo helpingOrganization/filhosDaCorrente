@@ -183,12 +183,10 @@ body::-webkit-scrollbar-thumb {
 
 .about-us-background-and-content {
     width: 100%;
-    height: 50%;
+    height: 100%;
     background-color: #000000;
     color: white;
     display: flex;
-    position: relative;
-
 }
 
 .about-us-background-and-content h2 {
@@ -205,10 +203,6 @@ body::-webkit-scrollbar-thumb {
 
     max-width: 45%;
     margin: 3% 2% 0% 4%;
-}
-
-.about-us-image {
-    width: 50vw;
 }
 
 #negro {
@@ -458,6 +452,57 @@ body::-webkit-scrollbar-thumb {
 .card:hover .botao {
     opacity: 0.9;
 }
+
+/*Container DOAÇÕES */
+
+.donate-background-and-content {
+    width: 100%;
+    height: 80vh;
+    background-color: #000000;
+    color: white;
+    display: flex;
+}
+
+#donate-child-img{
+    width: 35vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+#donate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#donate-container h2 {
+    margin-top: 4rem;
+}
+
+#donate-container p {
+    font-size: 1.5em;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    width: 80%;
+}
+
+#donate-button {
+    border: 4px solid white;
+    width: fit-content;
+    padding: 1rem;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#donate-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transition: all 0.4s;
+}
+
 
 /*Rodapé*/
 /*Barra de medias*/
