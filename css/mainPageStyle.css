@@ -16,7 +16,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: Sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
     list-style: none;
 }
@@ -183,31 +183,29 @@ body::-webkit-scrollbar-thumb {
 
 .about-us-background-and-content {
     width: 100%;
-    height: 100%;
+    height: 94vh;
     background-color: #000000;
     color: white;
     display: flex;
 }
 
 .about-us-background-and-content h2 {
-    margin-bottom: 10%;
+    margin: 0% 0% 5% 0%;
     white-space: nowrap;
 }
 
 .about-us-background-and-content p {
-    font-size: 1.7em;
-    line-height: 1.6em;
+    font-size: 1.4em;
+    line-height: 1.8em;
 }
 
 .about-us-text {
-
-    max-width: 45%;
-    margin: 3% 2% 0% 4%;
-}
-
-#negro {
-    width: 100%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin: 0% 0% 8% 5%;
 }
 
 /* DIV para levar usuario ao clicar em SOBRE NÓS no menu de navegação */
@@ -217,46 +215,37 @@ body::-webkit-scrollbar-thumb {
     left: 20%;
 }
 
+#about-us-image{
+    height: 100%;
+    width: 265vw;
+}
+
 #about-us-image img {
     object-fit: cover;
     height: 100%;
-    width: 110%;
+    width: 100%;
 }
 
 /*Inicio de projetos*/
 
 .section-project {
     width: 100%;
-    background-color:#424040;
+    background-image: linear-gradient(to bottom, #191919, #080808);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: inset 0px 5px 20px black;
 }
 
-.support-container h3 {
-    margin-top: 5%;
-    font-size: 100%;
+.support-container h2 {
+    margin-top: 7%;
     text-align: center;
 }
 
 .support-container p {
-    font-size: 80%;
+    font-size: 1em;
     visibility: hidden;
     text-align: center;
     margin: 8%;
-}
-
-/*Titulo principal PROJETOS*/
-.sub-titulo {
-    width: 100%;
-    font-family: var(--titulo);
-    letter-spacing: .2em;
-    color: white;
-    font-size: 150%;
-    text-align: center;
-    margin: 30px 0px 0px 0px;
-    text-shadow: 0.1em 0.1em 0.2em black
 }
 
 /*div que comporta os cards*/
@@ -379,13 +368,65 @@ body::-webkit-scrollbar-thumb {
     bottom: 13%;
     left: 20%;
 }
-
 /*FIM DE PROJETOS*/
 
-.schedule-background-and-content {
-    background-color: #424040;
+/*Container DOAÇÕES */
+.donate-background-and-content {
     width: 100%;
-    height: 110vh;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #080808, rgb(0, 0, 0));
+    color: white;
+    display: flex;
+}
+
+#donate-child-img{
+    width: 35vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+#donate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#donate-container h2 {
+    margin-top: 4rem;
+}
+
+#donate-container p {
+    font-size: 1.4em;
+    margin-top: 5%;
+    margin-bottom: 12%;
+    width: 80%;
+    line-height: 1.6em;
+    
+}
+
+#donate-button {
+    border: 4px solid white;
+    width: fit-content;
+    padding: 1rem;
+    font-size: 1.5em;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#donate-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transition: all 0.4s;
+    border: 4px solid black;
+}
+
+.schedule-background-and-content {
+    background: url(/imagens/conteudo/backgroundBlack2.jpg) no-repeat center;
+    width: 100%;
+    height: 105vh;
     padding-top: 3%;
 }
 
@@ -402,7 +443,6 @@ body::-webkit-scrollbar-thumb {
     padding: 40px;
     border-radius: 6px;
     height: 80vh;
-    background-color: #34322c;
 }
 
 .card {
@@ -452,57 +492,6 @@ body::-webkit-scrollbar-thumb {
 .card:hover .botao {
     opacity: 0.9;
 }
-
-/*Container DOAÇÕES */
-
-.donate-background-and-content {
-    width: 100%;
-    height: 80vh;
-    background-color: #000000;
-    color: white;
-    display: flex;
-}
-
-#donate-child-img{
-    width: 35vw;
-    height: 100%;
-    object-fit: cover;
-}
-
-#donate-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-}
-
-#donate-container h2 {
-    margin-top: 4rem;
-}
-
-#donate-container p {
-    font-size: 1.5em;
-    margin-top: 5%;
-    margin-bottom: 15%;
-    width: 80%;
-}
-
-#donate-button {
-    border: 4px solid white;
-    width: fit-content;
-    padding: 1rem;
-    font-size: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#donate-button:hover {
-    background-color: #ffffff;
-    color: #000000;
-    transition: all 0.4s;
-}
-
 
 /*Rodapé*/
 /*Barra de medias*/
