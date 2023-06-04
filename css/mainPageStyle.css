@@ -421,14 +421,19 @@ body::-webkit-scrollbar-thumb {
 
 .donate-background-and-content {
     width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to bottom, #1e1d1d, #000000);
+    height: 80vh;
+    background-image: linear-gradient(to bottom, #121212, #000000);
     color: white;
     display: flex;
 }
 
+#donate-child-container-img {
+    height: 100%;
+    width: 47vw;
+}
+
 #donate-child-img{
-    width: 35vw;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
@@ -447,7 +452,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #donate-container p {
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin-top: 5%;
     margin-bottom: 12%;
     width: 80%;
