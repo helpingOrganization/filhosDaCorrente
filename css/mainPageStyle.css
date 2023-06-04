@@ -429,11 +429,11 @@ body::-webkit-scrollbar-thumb {
 
 #donate-child-container-img {
     height: 100%;
-    width: 47vw;
+    width: 35vw;
 }
 
 #donate-child-img{
-    width: 100%;
+    width: 90%;
     height: 100%;
     object-fit: cover;
 }
@@ -442,7 +442,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 60vw;
     height: 100%;
     text-align: center;
 }
@@ -454,10 +454,9 @@ body::-webkit-scrollbar-thumb {
 #donate-container p {
     font-size: 1.2em;
     margin-top: 5%;
-    margin-bottom: 12%;
+    margin-bottom: 7%;
     width: 80%;
     line-height: 1.6em;
-    
 }
 
 #donate-button {
