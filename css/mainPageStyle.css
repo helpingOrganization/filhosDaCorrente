@@ -184,7 +184,7 @@ body::-webkit-scrollbar-thumb {
 .about-us-background-and-content {
     width: 100%;
     height: 100vh;
-    background-color: #000000;
+    background-color: #0d0d0d;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -271,6 +271,7 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5%;
 }
 
 .informative-project-text-container > div {
@@ -279,6 +280,11 @@ body::-webkit-scrollbar-thumb {
     padding: 3px;
     white-space: nowrap;
     margin-top: 4%;
+    cursor: pointer;
+}
+
+.informative-project-text-container > div p {
+    color: black;
 }
 
 .sub-card p {
@@ -416,7 +422,7 @@ body::-webkit-scrollbar-thumb {
 .donate-background-and-content {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, #080808, rgb(0, 0, 0));
+    background-image: linear-gradient(to bottom, #1e1d1d, #000000);
     color: white;
     display: flex;
 }
@@ -497,11 +503,12 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     background-color: #6b8853c2;
+    gap: 5%;
 }
 
 .informative-schedule-text-container {
     height: 40vh;
-    width: 40vw;
+    width: 30vw;
     padding: 15px;
     color: rgb(0, 0, 0);
     border-radius: 20px;
