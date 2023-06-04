@@ -16,7 +16,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: Sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
     list-style: none;
 }
@@ -183,98 +183,133 @@ body::-webkit-scrollbar-thumb {
 
 .about-us-background-and-content {
     width: 100%;
-    height: 50%;
-    background-color: #000000;
+    height: 100vh;
+    background-color: #0d0d0d;
     color: white;
     display: flex;
-    position: relative;
-
+    justify-content: space-between;
 }
 
 .about-us-background-and-content h2 {
-    margin-bottom: 10%;
+    margin: 0% 0% 5% 0%;
     white-space: nowrap;
 }
 
 .about-us-background-and-content p {
-    font-size: calc(1.5em);
-    line-height: 1.5em;
-}
-
-.about-us-text {
-
-    max-width: 45%;
-    margin: 3% 2% 0% 4%;
-}
-
-.about-us-image {
+    font-size: 1.4em;
+    line-height: 1.8em;
     width: 50vw;
 }
 
-#negro {
-    width: 100%;
-    height: 100%;
-}
-#about-us{
-    /* DIV para levar usuario ao clicar em SOBRE NÓS no menu de navegação */
-    position: absolute;
-    bottom: 0%;
-    left: 20%;
-
-}
-
-/*INICIO DE PROJETOS*/
-.support-container {
-    width: 100%;
-    position: relative;
+.about-us-text {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    background-color: rgba(245, 245, 245, 0.541);
-    box-shadow: inset 0px 5px 20px black;
+    text-align: left;
+    margin: 0% 0% 8% 5%;
 }
 
-.support-container h3 {
-    margin-top: 5%;
-    font-size: 100%;
+#about-us-image{
+    height: 100%;
+}
+
+#about-us-image img {
+    object-fit: cover;
+    height: 100%;
+    width: 50vw;
+}
+
+/*Inicio de projetos*/
+
+.section-project {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5%;
+    background-color: #c69c53;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-support-container h2 {
+    margin: 3% 0% 2% 0%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.support-container p {
-    font-size: 80%;
+.project-support-container h2::after{
+    content: "";
+    height: 8px;
+    width: 90px;
+    border-top: 2px solid rgb(255, 255, 255);
+}
+
+#project-text-container {
+    height: fit-content;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000000;
+    gap: 5%;
+}
+
+.informative-project-text-container {
+    height: 40vh;
+    width: 30vw;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    background-color: #c2bcb1;
+    border-radius: 20px;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.informative-project-text-container > div {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 3px;
+    white-space: nowrap;
+    margin-top: 4%;
+    cursor: pointer;
+}
+
+.informative-project-text-container > div p {
+    color: black;
+}
+
+.sub-card p {
+    font-size: 1em;
     visibility: hidden;
     text-align: center;
     margin: 8%;
 }
 
-.sub-titulo {
-    /*Titulo principal PROJETOS*/
-    width: 100%;
-    font-family: var(--titulo);
-    letter-spacing: .2em;
-    color: white;
-    font-size: 150%;
-    text-align: center;
-    margin: 30px 0px 0px 0px;
-    text-shadow: 0.1em 0.1em 0.2em black
-}
-
-.lista-projects {
-    /*div que comporta os cards*/
+/*div que comporta os cards*/
+.lista-projects { 
     margin-top: 1%
 }
 
-.linha-projects {
-    /* 2 linhas compostas de 3 cards cada*/
+/* 2 linhas compostas de 3 cards cada*/
+.linha-projects { 
     display: flex;
     justify-content: center;
     margin: 1% 1%;
-
 }
 
+/*card principal que contem as imagens e o sub card preto dentro*/
 .item-projects {
-    /*card principal que contem as imagens e o sub card preto dentro*/
-    width: 20%;
+    width: 16%;
+    height: 10%;
     color: white;
     margin: 2% 2%;
     box-shadow: 10px 10px 20px black;
@@ -285,12 +320,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .imgprojects {
-    /*imagem dos cards*/
     width: 100%;
 }
 
+/*card preto com animação ao passar o mouse*/
 .sub-card {
-    /*card preto com animação ao passar o mouse*/
     height: 23%;
     width: 100%;
     position: absolute;
@@ -304,8 +338,8 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
 }
 
+/*botão Inscrevase/Local de entrega dentro do sub card preto*/
 .inscrevase {
-    /*botão Inscrevase/Local de entrega dentro do sub card preto*/
     width: 65%;
     height: 8%;
     text-align: center;
@@ -319,14 +353,17 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
 }
+
 .inscrevase a{
     color: #ffffff;
     width: 100%;
 }
+
 .inscrevase:hover {
     border-color: #ffffff;
     background-color: whitesmoke;
 }
+
 .inscrevase:hover a{
     color: #000000;
 }
@@ -343,10 +380,9 @@ body::-webkit-scrollbar-thumb {
     transition: .9s;
 }
 
-
-
+/*empilhamento dos itens de projects a partir de 900px*/ 
 @media (max-width: 900px) {
-    /*empilhamento dos itens de projects a partir de 900px*/ 
+
     .linha-projects {
         display: flex;
         flex-direction: column;
@@ -373,169 +409,179 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+/* div para levar usuario ao clicar em projetos no menu de navegação */
 #scroll-project {
-    /* div para levar usuario ao clicar em projetos no menu de navegação */
     position: absolute;
     bottom: 10%;
     left: 20%;
 }
 /*FIM DE PROJETOS*/
 
-.schedule-background-and-content {
+/*Começa a seção de doações*/
+
+.donate-background-and-content {
     width: 100%;
-    height: 110vh;
-    background-color: rgb(57, 57, 51);
+    height: 80vh;
+    background-image: linear-gradient(to bottom, #121212, #000000);
+    color: white;
+    display: flex;
+}
+
+#donate-child-container-img {
+    height: 100%;
+    width: 35vw;
+}
+
+#donate-child-img{
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#donate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+    height: 100%;
+    text-align: center;
+}
+
+#donate-container h2 {
+    margin-top: 4rem;
+}
+
+#donate-container p {
+    font-size: 1.2em;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    width: 80%;
+    line-height: 1.6em;
+}
+
+#donate-button {
+    border: 4px solid white;
+    width: fit-content;
+    padding: 1rem;
+    font-size: 1.5em;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#donate-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transition: all 0.4s;
+    border: 4px solid black;
+}
+
+/*Começa Programação*/
+
+.schedule-background-and-content {
+    background-color: #6b8853c2;
+    width: 100%;
+    height: fit-content;
     padding-top: 3%;
 }
 
 .programing-title {
     font-family: var(--titulo);
     margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.programing-title::after {
+    content: "";
+    height: 8px;
+    width: 90px;
+    border-top: 2px solid #ffffff;
+}
+
+#schedule-text-container {
+    height: fit-content;
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6b8853c2;
+    gap: 5%;
+}
+
+.informative-schedule-text-container {
+    height: 40vh;
+    width: 30vw;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-card {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 2% 4%;
-    background-color: rgb(95, 92, 81);
     padding: 40px;
     border-radius: 6px;
     height: 80vh;
 }
 
 .card {
-    position: relative;
-    width: 21vw;
-    height: 60vh;
-    box-shadow: 12px 10px 15px rgba(0, 0, 0, 0.769);
-    transition: 0.4s ease-in-out;
-    transform: 0.1s ease-in-out;
+    position: relative; 
+    width: 20%;
+    height: fit-content;
     border-radius: 7px;
 }
 
 .card img {
-    position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 7px;
-    object-fit: cover;
-
+    box-shadow: 12px 10px 15px rgba(0, 0, 0, 0.769);
+    transition: 0.4s ease-in-out; 
+    transform: 0.1s ease-in-out;
 }
 
-.card:hover {
+.card:hover img{
     opacity: 0.8;
     transform: scale(.95);
     filter: brightness(50%);
-
 }
 
 .botao {
+    display:flex;
     position: absolute;
+    align-items: center;
+    justify-content: center;
     top: 50%;
     left: 33%;
     width: 8vw;
     height: 5.5vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: bold;
     background-color: #000000;
+    border: none;
     border-radius: 10px;
-    color: rgb(247, 248, 250);
+    color: rgb(255, 255, 255);
     cursor: pointer;
     opacity: 0;
-    transition: opacity 0.4s ease-in-out;
+    transition: 0.4s ease-in-out; 
+    filter: none;
 }
 
 .card:hover .botao {
-    opacity: 2;
+    opacity: 0.95;
 }
 
-@media (max-width: 500px) {
-
-    .schedule-background-and-content {
-        height: fit-content;
-    }
-
-    .container-card {
-        width: 100vw;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .card {
-        width: 50%;
-    }
-}
-
-#scroll-schedule {
-    /* div para levar usuario ao clicar em PROGRAMAÇÃO no menu de navegação */
-    position: absolute;
-    bottom: 8%;
-    left: 0%;
-}
-
-    /*Container DOAÇÕES */
-
-    .container-doacao h3 {
-        margin-top: 5%;
-        font-size: 100%;
-        text-align: center;
-    }
-    
-    .container-doacao p {
-        font-size: 80%;
-        text-align: center;
-        margin: 8%;
-    }
-.container-doacao {
-    width: 100%;
-    height: 50%;
-    background-color: #000000;
-    color: white;
-    display: flex;
-    position: relative;
-}
-
-#crianca{
-    width: 100%;
-    height: 100%;
-}
-#doe-title{
-    text-align: center;
-}
-.sub-container-doacoes{
-    width: 100%;
-    height: 15%;
-    margin-top: 15%;
-    display: flex;
-    justify-content: center;
-}
-.cards-doacoes{
-    background-color: rgb(255, 255, 255);
-    width: 40%;
-    height: 60%;
-    margin: 2%;
-    border: solid;
-    border-radius: 5%;
-    
-}
-.cards-doacoes a{
-    display: inline-flex;
-    width: 100%;
-    height: 100%;
-    color: #000000;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5%;
-    transition: .5s;
-}
-
-.cards-doacoes:hover a{
-        background:#000000;
-        color: white;
-}
 /*Rodapé*/
 /*Barra de medias*/
 
