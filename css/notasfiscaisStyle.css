@@ -43,17 +43,14 @@ body {
     margin-top: 3px;
 }
 
-.container-image {
-    width: 100%;
+.image {
+    width: 100vw;
     height: 40vh;
-    overflow: hidden;
-
 }
 
 .image img {
-    object-position: top;
     width: 100%;
-    height: 80%;
+    height: 100%;
     background-repeat: no-repeat;
     object-fit: cover;
     object-position: 50% 50%;
@@ -62,9 +59,8 @@ body {
 .container-card {
     display: flex;
     justify-content: space-around;
-    margin-top: 6%;
+    margin-top: 2%;
 }
-
 
 .card {
     width: 40vw;
@@ -74,7 +70,7 @@ body {
     padding: 2%;
     margin-bottom: 5%;
   }
-
+  
   /*doacoes notas fiscais*/
 
   .donate-text {
@@ -93,12 +89,12 @@ body {
     margin-left: 5%;
     margin-right: 5%;
     padding-top: 10%;
-    line-height: 1.9em;
+    line-height: 1.6em;
   }
 
-  a {
+  .link-contact {
     text-decoration: none;
-    color: rgb(35, 35, 228) ;
+    color: #469BD2;
     cursor: pointer;
   }
 
@@ -106,50 +102,6 @@ body {
 
 .background-footer-color {
     background-color: #232323;
-}
-
-.container-card-donations{
-    border-radius: 20px;
-    width: 30%;
-    height: 40%;
-    background-color: darkorange;
-    display: flex;
-    flex-direction: column;
-    left: 30%;
-
-}
-.donations-work-title{ /*Titulo Doacões*/
-    text-align: center;
-    padding-top: 8%;
-    font-size: 1.5rem; 
-}
-.donations-work-text { /*primeira parte de texto doações*/
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-top: 7%;
-    font-size: 1.2rem;
-    text-align: center;
-}
-.donations-work-text2 { /*Segunda parte de texto doações*/
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-top: 7%;
-    font-size: 1.2rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-.qrcode{
-    margin-top: 5%;
-    position: relative;
-    left: 27%;
-    width: 40%;
-    height: 40%;
-}
-.qrcode img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10%;
 }
 
 footer {
@@ -205,4 +157,53 @@ footer {
     padding: 1vh;
     display: flex;
     justify-content: center;
+}
+
+/*Doações*/
+.section-donations{
+    display: flex;
+    justify-content: center;
+}
+.container-card-donations{
+    border-radius: 20px;
+    width: 30%;
+    height: 40%;
+    margin: 1%;
+    background-color: darkorange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.donations-work-title{ /*Titulo Doacões*/
+    text-align: center;
+    padding-top: 8%;
+    font-size: 1.5rem; 
+}
+.donations-work-text { /*primeira parte de texto doações*/
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 7%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.donations-work-text2 { /*Segunda parte de texto doações*/
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 7%;
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.qrcode{
+    margin: 5%;
+    width: 40%;
+    height: 40%;
+}
+.qrcode img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
 }
