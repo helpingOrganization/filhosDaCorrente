@@ -43,17 +43,21 @@ body {
     margin-top: 3px;
 }
 
-.image {
-    width: 100vw;
+.container-image {
+    width: 100%;
     height: 40vh;
+    overflow: hidden;
+
 }
 
 .image img {
+    object-position: top;
     width: 100%;
-    height: 100%;
+    height: 80%;
     background-repeat: no-repeat;
     object-fit: cover;
-    object-position: 50% 50%;
+    background-position: bottom 80px right 0px;
+    
 }
 
 .container-card {
@@ -70,7 +74,7 @@ body {
     padding: 2%;
     margin-bottom: 5%;
   }
-  
+
   /*doacoes notas fiscais*/
 
   .donate-text {
@@ -89,12 +93,12 @@ body {
     margin-left: 5%;
     margin-right: 5%;
     padding-top: 10%;
-    line-height: 1.6em;
+    line-height: 1.9em;
   }
 
-  .link-contact {
+  a {
     text-decoration: none;
-    color: #469BD2;
+    color: rgb(35, 35, 228) ;
     cursor: pointer;
   }
 
