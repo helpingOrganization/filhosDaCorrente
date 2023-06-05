@@ -226,7 +226,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     height: 100%;
     padding-bottom: 5%;
-    background-color: #dfae71;
+    background-image: linear-gradient(to bottom, #e9b554, #9c7e4b);
     display: flex;
     flex-direction: column;
 }
@@ -249,12 +249,13 @@ body::-webkit-scrollbar-thumb {
 #project-text-container {
     height: fit-content;
     width: 100%;
-    padding: 20px;
+    padding: 3% 0%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #00000000;
     gap: 5%;
+    background-color: #ac742b56;
+    margin-bottom: 5%;
 }
 
 .informative-project-text-container {
@@ -262,7 +263,7 @@ body::-webkit-scrollbar-thumb {
     width: 30vw;
     padding: 15px;
     color: rgb(0, 0, 0);
-    background-color: #c2bcb1;
+    background-color: #e9d2a0;
     border-radius: 20px;
     font-size: 1.2em;
     line-height: 1.4em;
@@ -271,12 +272,12 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5%;
 }
 
 .informative-project-text-container > div {
     border: 2px solid black;
-    border-radius: 15px;
+    background-color: #d0ba86a4;
+    border-radius: 20px;
     padding: 3px;
     white-space: nowrap;
     margin-top: 4%;
@@ -285,6 +286,19 @@ body::-webkit-scrollbar-thumb {
 
 .informative-project-text-container > div p {
     color: black;
+}
+
+#subtitle-project-list {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.project-support-container h4 {
+    width: fit-content;
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-bottom: 2%;
 }
 
 .sub-card p {
@@ -463,7 +477,7 @@ body::-webkit-scrollbar-thumb {
     border: 4px solid white;
     width: fit-content;
     padding: 1rem;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 550;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -478,7 +492,7 @@ body::-webkit-scrollbar-thumb {
 /*Começa Programação*/
 
 .schedule-background-and-content {
-    background-color: #7c6740;
+    background-color: #b9ae4bc2;
     width: 100%;
     height: fit-content;
     padding-top: 3%;
@@ -486,10 +500,10 @@ body::-webkit-scrollbar-thumb {
 
 .programing-title {
     font-family: var(--titulo);
-    margin-left: 4%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1% 0% 2% 0%;
 }
 
 .programing-title::after {
@@ -499,14 +513,17 @@ body::-webkit-scrollbar-thumb {
     border-top: 2px solid #ffffff;
 }
 
+#informative-schedule-bunny-img {
+    width: 28vw;
+}
+
 #schedule-text-container {
     height: fit-content;
     width: 100vw;
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #D9A648;
+    background-color: #ada35dc2;
     gap: 5%;
 }
 
@@ -516,22 +533,37 @@ body::-webkit-scrollbar-thumb {
     padding: 15px;
     color: rgb(0, 0, 0);
     border-radius: 20px;
-    font-size: 1.2em;
+    font-size: 1.3em;
     line-height: 1.4em;
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+.informative-schedule-text-container p {
+    margin-top: 4%;
+}
 
+#subtitle-schedule-list {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#subtitle-schedule-list h4 {
+    width: fit-content;
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-top: 3%;
+}
 
 .container-card {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 40px;
+    padding-bottom: 5%;
     border-radius: 6px;
     height: 80vh;
 }
