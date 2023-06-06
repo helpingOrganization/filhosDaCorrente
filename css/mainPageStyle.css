@@ -359,6 +359,8 @@ body::-webkit-scrollbar-thumb {
     transition: 0.4s;
 }
 
+
+
 .project-cards-description:hover {
     background-color: #e0d48f;
     transition: 0.4s;
@@ -457,7 +459,7 @@ body::-webkit-scrollbar-thumb {
 
 .schedule-background-and-content {
     justify-content: center;
-    background-color: #A66D03;
+    background-color: #86A66F;
     width: 100%;
     height: fit-content;
     padding-top: 3%;
@@ -488,7 +490,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     display: flex;
     align-items: center;
-    background-color: #ada35dc2;
+    background-color: #728E5D;
 }
 
 .informative-schedule-text-container {
