@@ -566,7 +566,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-bottom: 5%;
+    padding-bottom: 7%;
     border-radius: 6px;
     height: 80vh;
     background-image: linear-gradient(to bottom, #7a9d62, #608643);
