@@ -471,6 +471,7 @@ body::-webkit-scrollbar-thumb {
 /*Começa Programação*/
 
 .schedule-background-and-content {
+    justify-content: center;
     background-color: #A66D03;
     width: 100%;
     height: fit-content;
@@ -490,26 +491,25 @@ body::-webkit-scrollbar-thumb {
     height: 8px;
     width: 90px;
     border-top: 2px solid #ffffff;
+
 }
 
-#informative-schedule-bunny-img {
-    width: 28%;
-}
+
 
 #schedule-text-container {
     height: fit-content;
     width: 100%;
     padding: 20px 0px;
+    justify-content: center;
     display: flex;
     align-items: center;
     background-color: #ada35dc2;
-    gap: 5%;
 }
 
 .informative-schedule-text-container {
     height: 40%;
-    width: 30%;
-    padding: 15px;
+    width: 48%;
+    padding: 3rem 0rem;
     color: rgb(0, 0, 0);
     border-radius: 20px;
     font-size: 1.3em;
@@ -517,8 +517,7 @@ body::-webkit-scrollbar-thumb {
     text-align: left;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: center;  
 }
 
 .informative-schedule-text-container p {
