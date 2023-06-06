@@ -226,7 +226,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     height: 100%;
     padding-bottom: 5%;
-    background-image: linear-gradient(to bottom, #e9b554, #9c7e4b);
+    background-color: #A66D03;
     display: flex;
     flex-direction: column;
 }
@@ -301,32 +301,43 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 2%;
 }
 
+/*incio dos cards projetos*/
+
+#container-project{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 #project-cards-container {
-    width: 100vw;
-    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    gap: 10%;
+    display: grid;
     padding-bottom: 10%;
     border: 2px solid black;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 18vw 18vw 18vw;
-    grid-template-rows: 450px 450px 450px;
-    row-gap: 20%;
-    column-gap: 15%;
+    grid-template-columns: repeat(3, 1fr);
+  
 }
 
 .project-cards {
-    background-color: turquoise;
+    width: 20.3rem;
+    height: 30.3rem;
+    background-color: white;
     border: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: end;
 }
 
 .project-cards-description {
-    width: 80%;
-    height: 40%;
-    background-color: #ffffff;
-    margin-top: 20px;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-top: 15rem;
+    width: 90%;
+    height: 60%;
+    background-color: #000000;
     overflow-y: visible;
 }
 
@@ -394,7 +405,7 @@ body::-webkit-scrollbar-thumb {
 /*Começa Programação*/
 
 .schedule-background-and-content {
-    background-color: #b9ae4bc2;
+    background-color: #A66D03;
     width: 100%;
     height: fit-content;
     padding-top: 3%;
