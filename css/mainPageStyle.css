@@ -236,7 +236,7 @@ body::-webkit-scrollbar-thumb {
 }
 #about-us{ /*DIV USADA PARA SCROLL NO CLIQUE DE SOBRE NÓS NO MENU DE NAVEGAÇÃO*/
     position: absolute;
-    bottom: 5%;
+    bottom: 0%;
 }
 
 /*Inicio de projetos*/
@@ -373,52 +373,34 @@ body::-webkit-scrollbar-thumb {
     background-color: white;
 }
 
-.project-cards-description {
+.project-cards a {
     position: absolute;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
     width: 95%;
-    height: 50%;
+    height: 60%;
     top: 80%;
     background-color: #171414;
     color: white;
-    transition: 0.4s;
 }
 
-.project-cards-description:hover {
+
+.project-cards:nth-child(2n+1) > a {
     background-color: #e0d48f;
-    transition: 0.4s;
 }
 
-.project-cards-description:hover h4 {
-    color: black;
-    transition: 0.4s;
-}
-
-.project-cards:nth-child(2n+1) > .project-cards-description {
-    background-color: #e0d48f;
-    transition: 0.5s;
-}
-
-.project-cards:nth-child(2n+1) > .project-cards-description h4{
+.project-cards:nth-child(2n+1) > a h4 {
     color: #000000;
-    transition: 0.5s;
 }
 
-.project-cards:nth-child(2n+1) > .project-cards-description:hover {
-    background-color: #171414;
-    transition: 0.4s;
-}
-
-.project-cards:nth-child(2n+1) > .project-cards-description:hover h4{
-    color: #ffffff;
-    transition: 0.4s;
+.project-cards:nth-child(2n+1) > a p {
+    color: #000000;
 }
 
 .project-cards-description h4 {
     font-size: 1.1em;
-    text-align: center;
 }
 
 /*FIM DE PROJETOS*/
@@ -573,7 +555,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-bottom: 5%;
+    padding-bottom: 7%;
     border-radius: 6px;
     height: 80vh;
     background-image: linear-gradient(to bottom, #7a9d62, #608643);
