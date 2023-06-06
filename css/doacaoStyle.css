@@ -95,6 +95,11 @@ body {
     line-height: 1.9em;
   }
 
+  .container-card:last-child(1) .card {
+    padding: 5rem 0rem;
+
+  }
+
   a {
     text-decoration: none;
     color: rgb(35, 35, 228) ;

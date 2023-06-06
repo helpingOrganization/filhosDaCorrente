@@ -30,6 +30,7 @@ a {
 body {
     min-width: 100vw;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -476,7 +477,7 @@ body::-webkit-scrollbar-thumb {
 
 .schedule-background-and-content {
     justify-content: center;
-    background-color: #A66D03;
+    background-color: #86A66F;
     width: 100%;
     height: fit-content;
     padding-top: 3%;
@@ -498,21 +499,20 @@ body::-webkit-scrollbar-thumb {
 
 }
 
-
-
 #schedule-text-container {
     height: fit-content;
     width: 100%;
-    padding: 20px 0px;
-    justify-content: center;
+    padding: 6rem 0rem;
+    justify-content: space-evenly;
     display: flex;
     align-items: center;
-    background-color: #ada35dc2;
+    flex-direction: row;
+    background-color: #728E5D;
 }
 
 .informative-schedule-text-container {
     height: 40%;
-    width: 48%;
+    width: 36%;
     padding: 3rem 0rem;
     color: rgb(0, 0, 0);
     border-radius: 20px;
@@ -524,21 +524,42 @@ body::-webkit-scrollbar-thumb {
     align-items: center;  
 }
 
+.informative-schedule-img {
+    width: 18vw;
+    filter:brightness(0);
+}
+
 .informative-schedule-text-container p {
     margin-top: 4%;
 }
 
-#subtitle-schedule-list {
-    width: 100%;
+#subtitle-schedule-list-positioned {
+    position: relative;
+    margin-top: 10rem;
+}
+
+#subtitle-schedule-list-align {
     display: flex;
     justify-content: center;
+}
+
+#subtitle-schedule-list {
+    position: absolute;
+    bottom: 95%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, #7a9d62, #608643);
+    margin-top: 3%;
+    padding: 2rem 4rem;
+    border: 2px solid #4f7334;
+    border-radius: 30px;
 }
 
 #subtitle-schedule-list h4 {
     width: fit-content;
     color: #ffffff;
     font-size: 1.5em;
-    margin-top: 3%;
 }
 
 .container-card {
@@ -548,6 +569,8 @@ body::-webkit-scrollbar-thumb {
     padding-bottom: 5%;
     border-radius: 6px;
     height: 80vh;
+    background-image: linear-gradient(to bottom, #7a9d62, #608643);
+    border-radius: 20px;
 }
 
 .card {
