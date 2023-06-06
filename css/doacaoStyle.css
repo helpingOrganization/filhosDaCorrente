@@ -76,6 +76,10 @@ body {
     margin-bottom: 5%;
   }
 
+  .card h2{
+    text-align: center;
+  }
+  
   /*doacoes notas fiscais*/
 
   .donate-text {
@@ -102,7 +106,7 @@ body {
 
   a {
     text-decoration: none;
-    color: rgb(35, 35, 228) ;
+    color: #469BD2;
     cursor: pointer;
   }
 
@@ -165,4 +169,57 @@ footer {
     padding: 1% 0%;
     display: flex;
     justify-content: center;
+}
+
+/*Doações*/
+.section-donations{
+    display: flex;
+    justify-content: left;
+    padding-bottom: 5rem;
+}
+
+.container-card-donations{
+    border-radius: 20px;
+    width: 30%;
+    height: 40%;
+    margin-left: 10%;
+    background-color: #FFD557;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.donations-work-title{ /*Titulo Doacões*/
+    text-align: center;
+    padding-top: 8%;
+    font-size: 1.5rem; 
+}
+
+.donations-work-text { /*primeira parte de texto doações*/
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 7%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.donations-work-text2 { /*Segunda parte de texto doações*/
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 7%;
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.qrcode{
+    margin: 5%;
+    width: 40%;
+    height: 40%;
+}
+.qrcode img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
 }

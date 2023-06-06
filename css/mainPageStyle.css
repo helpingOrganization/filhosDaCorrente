@@ -327,6 +327,9 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
 }
+.sub-card h3{
+    margin-top: 6%;
+}
 
 #project-cards-container {
     display: grid;
