@@ -95,7 +95,12 @@ body {
     line-height: 1.9em;
   }
 
-  .link-contact {
+  .container-card:last-child(1) .card {
+    padding: 5rem 0rem;
+
+  }
+
+  a {
     text-decoration: none;
     color: #469BD2;
     cursor: pointer;
