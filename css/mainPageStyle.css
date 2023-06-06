@@ -325,14 +325,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 .project-cards {
-    width: 20.3rem;
-    height: 30.3rem;
+    width: 500px;
+    height: 00px;
     background-color: white;
     border: 2px solid black;
 }
 
 .project-cards-description {
-    margin-top: 10%;
+   
     margin-left: 5%;
     margin-top: 15rem;
     width: 90%;
