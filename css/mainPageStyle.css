@@ -224,8 +224,8 @@ body::-webkit-scrollbar-thumb {
 .section-project {
     width: 100%;
     height: 100%;
-    padding-bottom: 5%;
-    background-color: #A66D03;
+    padding-bottom: 10%;
+    background-color: #926338;
     display: flex;
     flex-direction: column;
 }
@@ -253,7 +253,6 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     gap: 5%;
-    background-color: #ac742b56;
     margin-bottom: 5%;
 }
 
@@ -275,7 +274,6 @@ body::-webkit-scrollbar-thumb {
 
 .informative-project-text-container > div {
     border: 2px solid black;
-    background-color: #d0ba86a4;
     border-radius: 20px;
     padding: 3px;
     white-space: nowrap;
@@ -288,56 +286,113 @@ body::-webkit-scrollbar-thumb {
 }
 
 #subtitle-project-list {
-    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: #6b4a2c;
+    margin-bottom: 4%;
+    padding: 1rem 0rem;
 }
 
-.project-support-container h4 {
+#subtitle-project-list h4 {
     width: fit-content;
     color: #ffffff;
     font-size: 1.5em;
-    margin-bottom: 2%;
 }
 
 /*incio dos cards projetos*/
 
-#container-project{
-    justify-content: center;
+#project-align-cards-center-container{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-
 }
 
 #project-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15rem 10rem;
+}
+
+#project-cards-container img {
     width: 100%;
     height: 100%;
-    padding-bottom: 10%;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 18% 18% 18%;
-    grid-template-rows: 450px 450px 450px;
-    row-gap: 20%;
-    column-gap: 15%;
+    object-fit: cover;
+}
+
+#foodBasketProjects {
+    object-position: 50% 100%;
+}
+
+#milkDeliveryProject {
+    object-position: 50% 85%;
+}
+
+#bricklayerProject {
+    object-position: 30% 50%;
+}
+
+#caponierProject {
+    object-position: 30% 90%;
 }
 
 .project-cards {
-    width: 500px;
-    height: 00px;
-    background-color: white;
-    border: 2px solid black;
+    position: relative;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
+    align-items: end;
+    width: 21rem;
+    height: 23rem;
+    background-color: white;
 }
 
 .project-cards-description {
-    width: 80%;
-    height: 40%;
-    background-color: #ffffff;
-    margin-top: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 50%;
+    top: 80%;
+    background-color: #171414;
+    color: white;
+    transition: 0.4s;
 }
 
+.project-cards-description:hover {
+    background-color: #e0d48f;
+    transition: 0.4s;
+}
+
+.project-cards-description:hover h4 {
+    color: black;
+    transition: 0.4s;
+}
+
+.project-cards:nth-child(2n+1) > .project-cards-description {
+    background-color: #e0d48f;
+    transition: 0.5s;
+}
+
+.project-cards:nth-child(2n+1) > .project-cards-description h4{
+    color: #000000;
+    transition: 0.5s;
+}
+
+.project-cards:nth-child(2n+1) > .project-cards-description:hover {
+    background-color: #171414;
+    transition: 0.4s;
+}
+
+.project-cards:nth-child(2n+1) > .project-cards-description:hover h4{
+    color: #ffffff;
+    transition: 0.4s;
+}
+
+.project-cards-description h4 {
+    font-size: 1.1em;
+    text-align: center;
+}
 
 /*FIM DE PROJETOS*/
 
@@ -401,6 +456,7 @@ body::-webkit-scrollbar-thumb {
 /*Começa Programação*/
 
 .schedule-background-and-content {
+    justify-content: center;
     background-color: #A66D03;
     width: 100%;
     height: fit-content;
@@ -420,26 +476,25 @@ body::-webkit-scrollbar-thumb {
     height: 8px;
     width: 90px;
     border-top: 2px solid #ffffff;
+
 }
 
-#informative-schedule-bunny-img {
-    width: 28%;
-}
+
 
 #schedule-text-container {
     height: fit-content;
     width: 100%;
     padding: 20px 0px;
+    justify-content: center;
     display: flex;
     align-items: center;
     background-color: #ada35dc2;
-    gap: 5%;
 }
 
 .informative-schedule-text-container {
     height: 40%;
-    width: 30%;
-    padding: 15px;
+    width: 48%;
+    padding: 3rem 0rem;
     color: rgb(0, 0, 0);
     border-radius: 20px;
     font-size: 1.3em;
@@ -447,8 +502,7 @@ body::-webkit-scrollbar-thumb {
     text-align: left;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: center;  
 }
 
 .informative-schedule-text-container p {
@@ -505,8 +559,8 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     top: 50%;
-    left: 33%;
-    width: 8%;
+    left: 37%;
+    width: 6vw;
     height: 5.5vh;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
