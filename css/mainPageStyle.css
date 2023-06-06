@@ -159,8 +159,12 @@ body::-webkit-scrollbar-thumb {
     margin-left: 4%;
 }
 
+#header-nav a {
+    transition: 0.3s;
+}
+
 #header-nav a:hover {
-    color: rgb(255, 202, 28);
+    color: #ffca1c;
     transition: 0.2s;
 }
 
@@ -175,6 +179,17 @@ body::-webkit-scrollbar-thumb {
     letter-spacing: 2px;
     white-space: nowrap;
     padding: 2.5%;
+}
+
+#header-nav li:nth-last-child(1) a {
+    border: 1.5px solid white;
+    border-radius: 5px;
+    padding: 12px;
+    transition: 0.3s;
+}
+
+#header-nav li:nth-last-child(1) a:hover {
+    padding: 16px;
 }
 
 /*Conteúdo e background*/
@@ -341,8 +356,8 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     align-items: end;
-    width: 21rem;
-    height: 23rem;
+    width: 17rem;
+    height: 19rem;
     background-color: white;
 }
 
@@ -525,7 +540,7 @@ body::-webkit-scrollbar-thumb {
 
 .container-card {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding-bottom: 5%;
     border-radius: 6px;
@@ -534,7 +549,7 @@ body::-webkit-scrollbar-thumb {
 
 .card {
     position: relative; 
-    width: 20%;
+    width: 18%;
     height: fit-content;
     border-radius: 7px;
 }
