@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --titulo: 'Bebas Neue';
+}
+
+/*padronização*/
+
+.titles-style {
+    font-size: clamp(2em, 2em + 1vw, 3em);
+    font-family: var(--titulo);
+    letter-spacing: 0.1em;
+    color: black;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: #ebe1b5;   
+}
+
+/*nav*/
+
+#container-header {
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    padding-left: 1%;
+    z-index: 1;
+}
+
+.container-space-nav-corretion {
+    top: 0;
+    height: 85px;
+    width: 100%;
+}
+
+#logo-header {
+    height: 80px;
+    width: 230px;
+    margin-top: 3px;
+}
+
+.container-main {
+    width: 100%;
+    height: 50vh;
+}
+
+.container-main img {
+    width: 100%;
+    height: 100%;
+    object-position: 50% 75%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+            
+}
+
+.container-card {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.card {
+    margin: 0% 0% 2% 0%;
+    width: 40vw;
+    height: 100%;
+    background-color: #FFD557;
+    border: 3px solid black;
+    border-radius: 3%;
+    padding: 2%;
+    margin-bottom: 5%;
+  }
+
+  .card h2{
+    text-align: center;
+  }
+  
+  /*doacoes notas fiscais*/
+
+  .donate-text {
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 1.5em; 
+  }
+
+  .donate-text > p ~ h3, p {
+    margin-top: 2%;
+  }
+  /*trabalho voluntario*/
+
+  .volunteer-work-text {
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 1.9em;
+  }
+
+  .container-card:last-child(1) .card {
+    padding: 5rem 0rem;
+
+  }
+
+  a {
+    text-decoration: none;
+    color: #469BD2;
+    cursor: pointer;
+  }
+
+  /*footer*/
+
+.background-footer-color {
+    background-color: #232323;
+}
+
+footer {
+    color: rgb(221, 221, 221);
+}
+
+#container-footer {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#container-footer h3 {
+    margin-bottom: 4px;
+}
+
+#container-footer p {
+    font-weight: 600;
+}
+
+#corretion-spacement-tel-footer {
+    margin: 5% 0%;
+}
+
+.img-and-title-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.icons-footer-resize {
+    width: 15px;
+    height: 15px;
+    margin: 3px 8px 0px 0px;
+}
+
+.partnership-logo-resize {
+    height: 90px;
+    width: 185px;
+}
+
+#easter-egg {
+    cursor: auto;
+}
+
+#corretion-spacement-adress-footer {
+    line-height: 1.4;
+}
+
+#sub-footer {
+    width: 100%;
+    padding: 1% 0%;
+    display: flex;
+    justify-content: center;
+}
+
+/*Doações*/
+.section-donations{
+    display: flex;
+    justify-content: left;
+    padding-bottom: 5rem;
+}
+
+.container-card-donations{
+    border-radius: 20px;
+    width: 30%;
+    height: 40%;
+    margin-left: 10%;
+    background-color: #FFD557;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.donations-work-title{ /*Titulo Doacões*/
+    text-align: center;
+    padding-top: 8%;
+    font-size: 1.5rem; 
+}
+
+.donations-work-text { /*primeira parte de texto doações*/
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 7%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.donations-work-text2 { /*Segunda parte de texto doações*/
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 7%;
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.qrcode{
+    margin: 5%;
+    width: 40%;
+    height: 40%;
+}
+.qrcode img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
