@@ -39,7 +39,7 @@ a {
 /*Fomulário e background*/    
 
 #form-position {
-    background-image: url("../imagens/conteudo/capoeiraEvent.jpg");
+    background-image: url("../imagens/conteudo/caponierEvent.jpg");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
@@ -129,8 +129,8 @@ a {
 
 #shaft-img-position {
     height: 25px;
-    width: 25px;
-    margin-left: 2px;
+    width: 18px;
+    margin-left: 3px;
 }
 
 
@@ -152,6 +152,5 @@ a {
 }
 
 .social-media-icons {
-    width: 25px;
-    height: 25px;
+    width: 30px;
 }

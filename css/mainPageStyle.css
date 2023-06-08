@@ -44,7 +44,7 @@ body::-webkit-scrollbar-thumb {
 /*Imagem principal*/
 
 #background-main-img {
-    background-image: url("../imagens/conteudo/capoeiraEvent.jpg");
+    background-image: url("../imagens/conteudo/caponierEvent.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -224,15 +224,23 @@ body::-webkit-scrollbar-thumb {
     margin: 0% 0% 8% 5%;
 }
 
-#about-us-image{
+#about-us-image-container {
     height: 100%;
+    width: 50vw;
+    display: flex;
+    align-items: end;
+}
+
+#about-us-image-size {
+    height: 95%;
+    width: 100%;
     overflow: hidden;
 }
 
-#about-us-image img {
+#about-us-image-size img {
     object-fit: cover;
     height: 100%;
-    width: 50vw;
+    width: 100%;
 }
 
 /*Inicio de projetos*/
@@ -243,6 +251,10 @@ body::-webkit-scrollbar-thumb {
     background-color: #a37244;
     display: flex;
     flex-direction: column;
+}
+
+#smooth-scroll-projects {
+    scroll-margin-top: 80px;
 }
 
 #linear-background-color-projects {
@@ -468,6 +480,10 @@ body::-webkit-scrollbar-thumb {
     padding-top: 3%;
 }
 
+#smooth-scroll-schedule {
+    scroll-margin-top: 65px;
+}
+
 .programing-title {
     font-family: var(--titulo);
     display: flex;
@@ -631,8 +647,7 @@ footer {
 }
 
 .social-media-icons {
-    width: 25px;
-    height: 25px;
+    width: 28px;
 }
 
 /*Informações para contato*/
@@ -663,14 +678,14 @@ footer {
 }
 
 .icons-footer-resize {
-    width: 15px;
+    width: 17px;
     height: 15px;
     margin: 3px 8px 0px 0px;
 }
 
 .partnership-logo-resize {
-    height: 90px;
-    width: 185px;
+    height: 80px;
+    width: 175px;
 }
 
 #easter-egg {
