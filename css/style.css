@@ -382,10 +382,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .project-cards a {
-    position: absolute;
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
+    justify-content: center;
+    position: absolute;
     text-align: center;
     width: 95%;
     height: 60%;
@@ -394,6 +393,13 @@ body::-webkit-scrollbar-thumb {
     color: white;
 }
 
+.project-cards-description {
+    height: 100%;
+    width: 86%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
 .project-cards:nth-child(2n+1) > a {
     background-color: #e0d48f;
