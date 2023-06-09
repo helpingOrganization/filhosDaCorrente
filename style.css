@@ -242,6 +242,10 @@ body::-webkit-scrollbar-thumb {
     height: 100%;
     width: 100%;
 }
+#about-us{ /*DIV USADA PARA SCROLL NO CLIQUE DE SOBRE NÓS NO MENU DE NAVEGAÇÃO*/
+    position: absolute;
+    bottom: 0%;
+}
 
 /*Inicio de projetos*/
 
